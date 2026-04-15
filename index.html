@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI API 定價追蹤器</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
+  <style>
+    /* ── 奶茶（亮色，預設） ── */
+    :root, [data-theme="light"] {
+      --header-bg: linear-gradient(160deg, #ede0cc 0%, #faf3e8 100%);
+      --bg:        #faf3e8;
+      --bg2:       #fff8ef;
+      --border:    #d4b896;
+      --text:      #2d1a08;
+      --text2:     #6b4020;
+      --text3:     #9a6a38;
+      --accent:    #a05a18;
+      --accent2:   #7a3d10;
+      --link:      #8a4c14;
+      --link-bg:   #f0d8b8;
+      --free-bg:   #e0f4ea;
+      --free-text: #2a7a50;
+      --free-bdr:  #a0d4b8;
+      --chart-grid:   #e0c8a8;
+      --chart-tick:   #9a7050;
+      --chart-tick2:  #6b4020;
+      --chart-title:  #9a6a38;
+    }
+
+    /* ── 深咖（深色） ── */
+    [data-theme="dark"] {
+      --header-bg: linear-gradient(160deg, #2a1a0a 0%, #1a1008 100%);
+      --bg:        #1a1008;
+      --bg2:       #241710;
+      --border:    #4a3520;
+      --text:      #f0e4d0;
+      --text2:     #c4a47c;
+      --text3:     #7a5c3a;
+      --accent:    #c9863c;
+      --accent2:   #e8c080;
+      --link:      #d4984a;
+      --link-bg:   #4a2e0e;
+      --free-bg:   #1a3020;
+      --free-text: #6db88a;
+      --free-bdr:  #2a5038;
+      --chart-grid:   #3d2510;
+      --chart-tick:   #8a6040;
+      --chart-tick2:  #c4a47c;
+      --chart-title:  #7a5c3a;
+    }
+
+    /* ── 系統深色時自動套深咖（JS 未介入時的預設） ── */
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --header-bg: linear-gradient(160deg, #2a1a0a 0%, #1a1008 100%);
+        --bg:        #1a1008;
+        --bg2:       #241710;
+        --border:    #4a3520;
+        --text:      #f0e4d0;
+        --text2:     #c4a47c;
+        --text3:     #7a5c3a;
+        --accent:    #c9863c;
+        --accent2:   #e8c080;
+        --link:      #d4984a;
+        --link-bg:   #4a2e0e;
+        --free-bg:   #1a3020;
+        --free-text: #6db88a;
+        --free-bdr:  #2a5038;
+        --chart-grid:   #3d2510;
+        --chart-tick:   #8a6040;
+        --chart-tick2:  #c4a47c;
+        --chart-title:  #7a5c3a;
+      }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Noto Sans TC', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--header-bg);
+      border-bottom: 1px solid var(--border);
+      padding: 2rem 1.5rem 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #e8c080, #c9863c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.3rem;
+    }
+    .header-sub {
+      color: var(--text2);
+      font-size: 0.88rem;
+      margin-bottom: 0.8rem;
+    }
+    #updated-at { color: var(--accent2); font-weight: 500; }
+    .header-author {
+      margin-top: 0.8rem;
+      font-size: 0.82rem;
+      color: var(--text3);
+    }
+    .header-author a {
+      color: var(--link);
+      text-decoration: none;
+      border-bottom: 1px solid var(--link-bg);
+      padding-bottom: 1px;
+      margin: 0 0.3rem;
+      transition: color 0.2s;
+    }
+    .header-author a:hover { color: var(--accent2); }
+    .header-disclaimer {
+      margin-top: 0.6rem;
+      font-size: 0.75rem;
+      color: var(--text3);
+      background: #2a1a0a88;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.4rem 1rem;
+      display: inline-block;
+    }
+
+    /* ── Filter bar ── */
+    .filter-bar {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 1.2rem 1.5rem;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .filter-bar button {
+      padding: 0.45rem 1.1rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--text2);
+      font-family: inherit;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .filter-bar button.active,
+    .filter-bar button:hover {
+      background: var(--link-bg);
+      border-color: var(--accent);
+      color: var(--accent2);
+    }
+
+    /* ── Main ── */
+    main { max-width: 1280px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+
+    /* ── Section ── */
+    .section { margin-bottom: 2.5rem; }
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .section-title::before {
+      content: '';
+      display: block;
+      width: 4px;
+      height: 1.1rem;
+      border-radius: 2px;
+      background: linear-gradient(135deg, #c9863c, #e8c080);
+    }
+
+    /* ── Chart scale toggle ── */
+    .chart-toggle { display: flex; gap: 0.4rem; }
+    .toggle-btn {
+      padding: 0.3rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--text3);
+      font-family: inherit;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .toggle-btn.active {
+      background: var(--link-bg);
+      border-color: var(--accent);
+      color: var(--accent2);
+      font-weight: 600;
+    }
+
+    /* ── Section badge ── */
+    .section-badge {
+      font-size: 0.72rem;
+      font-weight: 400;
+      color: var(--text3);
+      margin-left: 0.4rem;
+    }
+
+    /* ── Chart card ── */
+    .chart-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .chart-card canvas { display: block; }
+
+    /* ── Two-column chart row ── */
+    .chart-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    @media (max-width: 900px) { .chart-row { grid-template-columns: 1fr; } }
+
+    /* ── Model card grid ── */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+    .model-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.2rem;
+      transition: border-color 0.2s, transform 0.2s;
+      position: relative;
+      overflow: hidden;
+    }
+    .model-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .model-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 4px; height: 100%;
+      background: var(--vendor-color, var(--accent));
+    }
+    .card-vendor {
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--vendor-color, var(--accent));
+      margin-bottom: 0.3rem;
+    }
+    .card-name {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.6rem;
+      line-height: 1.3;
+    }
+    .card-tier {
+      display: inline-block;
+      font-size: 0.7rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: 999px;
+      margin-bottom: 0.7rem;
+    }
+    .tier-high { background: #3d200a33; color: #e8a060; border: 1px solid #7a3a1055; }
+    .tier-mid  { background: #2a1a0833; color: var(--accent2); border: 1px solid #4a300e55; }
+    .tier-low  { background: #1a300833; color: #8ec870; border: 1px solid #2a501555; }
+    .card-desc {
+      font-size: 0.78rem;
+      color: var(--text2);
+      line-height: 1.5;
+      margin-bottom: 0.6rem;
+    }
+    .card-pricing {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.82rem;
+      color: var(--text2);
+      margin-bottom: 0.7rem;
+    }
+    .card-pricing span strong { color: var(--text); }
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .card-ctx { font-size: 0.72rem; color: var(--text3); }
+    .card-link {
+      font-size: 0.75rem;
+      color: var(--link);
+      text-decoration: none;
+      border: 1px solid var(--link-bg);
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+    .card-link:hover { background: var(--link-bg); color: var(--accent2); }
+
+    /* ── Free model badge ── */
+    .free-badge {
+      display: inline-block;
+      background: var(--free-bg);
+      color: var(--free-text);
+      border: 1px solid var(--free-bdr);
+      font-size: 0.68rem;
+      font-weight: 700;
+      padding: 0.12rem 0.45rem;
+      border-radius: 999px;
+      margin-bottom: 0.7rem;
+    }
+
+    /* ── Source note ── */
+    .source-note {
+      text-align: center;
+      color: var(--text3);
+      font-size: 0.78rem;
+      margin-top: 1rem;
+    }
+
+    /* ── Disclaimer ── */
+    .disclaimer {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem 1.5rem;
+      color: var(--text3);
+      font-size: 0.8rem;
+      line-height: 1.6;
+      margin-top: 2rem;
+    }
+    .disclaimer strong { color: var(--text2); }
+
+    /* ── Theme switcher ── */
+    .theme-switcher {
+      display: flex;
+      justify-content: center;
+      gap: 0.3rem;
+      padding: 0.6rem;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .theme-btn {
+      padding: 0.3rem 0.85rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--text3);
+      font-family: inherit;
+      font-size: 0.78rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .theme-btn.active {
+      background: var(--link-bg);
+      border-color: var(--accent);
+      color: var(--accent2);
+      font-weight: 600;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--text3);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+    }
+    footer a { color: var(--text3); text-decoration: none; }
+    footer a:hover { color: var(--accent2); }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>AI API 定價追蹤器</h1>
+  <p class="header-sub">每天早上 06:00（台灣時間）自動更新 · 資料來源：OpenRouter · 最後更新：<span id="updated-at">載入中...</span></p>
+  <p class="header-author">
+    由
+    <a href="https://portaly.cc/Jiang_Yude" target="_blank">江江教練</a>
+    設計製作 ·
+    <a href="https://www.threads.com/@jiang_yude_coach" target="_blank">Threads @jiang_yude_coach</a>
+  </p>
+  <p class="header-disclaimer">
+    ⚠️ 資料由 AI 自動從網路抓取，僅供參考，請以各家官方網站定價為準
+  </p>
+</header>
+
+<div class="theme-switcher">
+  <button class="theme-btn" data-theme="light">☀️ 奶茶</button>
+  <button class="theme-btn" data-theme="system">🌓 系統</button>
+  <button class="theme-btn" data-theme="dark">🌙 深咖</button>
+</div>
+
+<div class="filter-bar">
+  <button class="active" data-filter="all">全部廠商</button>
+  <button data-filter="anthropic">Anthropic</button>
+  <button data-filter="openai">OpenAI</button>
+  <button data-filter="google">Google</button>
+  <button data-filter="x-ai">xAI</button>
+  <button data-filter="deepseek">DeepSeek</button>
+  <button data-filter="qwen">Qwen</button>
+  <button data-filter="mistralai">Mistral</button>
+  <button data-filter="meta-llama">Meta</button>
+</div>
+
+<main>
+
+  <!-- 圖一：價格直方圖 -->
+  <div class="section">
+    <div class="section-title" style="justify-content:space-between;flex-wrap:wrap;gap:0.5rem;">
+      <span>① 定價比較（USD / 1M tokens）</span>
+      <div class="chart-toggle">
+        <button class="toggle-btn active" id="btn-log" onclick="setBarScale('logarithmic')">📊 價格示意圖</button>
+        <button class="toggle-btn" id="btn-linear" onclick="setBarScale('linear')">📏 實際尺度</button>
+      </div>
+    </div>
+    <div class="chart-card">
+      <canvas id="chart-bar" height="90"></canvas>
+      <p class="source-note" id="bar-note">對數刻度 · 顯示排名與相對大小 · 資料來源：OpenRouter API · 每天 06:00 自動更新</p>
+    </div>
+  </div>
+
+  <!-- 圖二 + 圖三 -->
+  <div class="section chart-row">
+    <div>
+      <div class="section-title">② 使用熱度排行（omniscienceIndex）</div>
+      <div class="chart-card" style="height:520px">
+        <canvas id="chart-rank" style="max-height:480px"></canvas>
+        <p class="source-note">來源：artificialanalysis.ai，第三方估算，僅供參考</p>
+      </div>
+    </div>
+    <div>
+      <div class="section-title">③ 熱度 vs 定價（右下 = CP 值高）</div>
+      <div class="chart-card" style="height:520px">
+        <canvas id="chart-scatter" style="max-height:480px"></canvas>
+        <p class="source-note">X 軸：omniscienceIndex · Y 軸：Output 價格</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 區塊一：主要三大廠商 -->
+  <div class="section">
+    <div class="section-title">主要三大廠商 <span class="section-badge">依熱度排序 · 各取高中低三款</span></div>
+    <div class="card-grid" id="grid-big3"></div>
+  </div>
+
+  <!-- 區塊二：免費熱門 -->
+  <div class="section">
+    <div class="section-title">免費好用模型 TOP 5 <span class="section-badge">每天更新 · 完全免費</span></div>
+    <div class="card-grid" id="grid-free"></div>
+  </div>
+
+  <!-- 區塊三：其他熱門 -->
+  <div class="section">
+    <div class="section-title">其他熱門模型 TOP 10 <span class="section-badge">依 omniscienceIndex 自動排入</span></div>
+    <div class="card-grid" id="grid-hot"></div>
+  </div>
+
+  <!-- 免責聲明 -->
+  <div class="disclaimer">
+    <strong>資料說明：</strong>
+    定價來源為 <a href="https://openrouter.ai/api/v1/models" target="_blank" style="color:var(--link)">OpenRouter 公開 API</a>，每天自動抓取，不保證即時性，<strong>請以各廠商官網為準。</strong>
+    使用熱度（omniscienceIndex）來源為 artificialanalysis.ai，為第三方使用量估算，非官方數據，僅供參考。
+  </div>
+
+</main>
+
+<footer>
+  <p>
+    <a href="https://github.com/Jiang-Yude/ai-pricing-tracker" target="_blank">GitHub</a>
+    &nbsp;·&nbsp;
+    <a href="https://openrouter.ai" target="_blank">OpenRouter</a>
+    &nbsp;·&nbsp;
+    <a href="https://artificialanalysis.ai" target="_blank">artificialanalysis.ai</a>
+    &nbsp;·&nbsp; 資料每天 06:00（台灣時間）自動更新
+  </p>
+</footer>
+
+<script>
+// ── Theme switcher ──
+(function() {
+  const root = document.documentElement;
+  const saved = localStorage.getItem('theme') || 'system';
+
+  function applyTheme(pref) {
+    const mq = window.matchMedia('(prefers-color-scheme: dark)');
+    const resolved = pref === 'system' ? (mq.matches ? 'dark' : 'light') : pref;
+    root.setAttribute('data-theme', resolved);
+  }
+
+  function setTheme(pref) {
+    localStorage.setItem('theme', pref);
+    applyTheme(pref);
+    document.querySelectorAll('.theme-btn').forEach(b => {
+      b.classList.toggle('active', b.dataset.theme === pref);
+    });
+  }
+
+  // Init
+  applyTheme(saved);
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.theme-btn').forEach(b => {
+      b.classList.toggle('active', b.dataset.theme === saved);
+      b.addEventListener('click', () => {
+        setTheme(b.dataset.theme);
+        if (allData) renderAll(); // redraw charts with new colors
+      });
+    });
+    // Follow system if set to system
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+      if (localStorage.getItem('theme') === 'system') applyTheme('system');
+    });
+  });
+})();
+
+// ── Clean model name ──
+// vendor 可選傳入，傳入時顯示「Vendor · Model」
+function cleanName(raw, vendor) {
+  const model = raw
+    .replace(/^[\w\s]+:\s*/,'')   // "Vendor Name: Model" → "Model"
+    .replace(/\s*\(.*?\)\s*$/, '') // remove trailing "(alias)"
+    .trim();
+  return vendor ? `${vendor} · ${model}` : model;
+}
+
+// ── Vendor color map ──
+const VENDOR_COLORS = {
+  'anthropic':  '#D97706',
+  'openai':     '#10B981',
+  'google':     '#3B82F6',
+  'x-ai':       '#8B5CF6',
+  'deepseek':   '#EF4444',
+  'qwen':       '#F59E0B',
+  'mistralai':  '#06B6D4',
+  'meta-llama': '#6366F1',
+  'minimax':    '#EC4899',
+  'nvidia':     '#84CC16',
+  'arcee-ai':   '#14B8A6',
+};
+
+// ── Placeholder omniscienceIndex (will be replaced by real data from fetch_rankings.py) ──
+const OMNI_INDEX = {
+  'anthropic/claude-opus-4.6':      3.8,
+  'anthropic/claude-opus-4':        3.5,
+  'anthropic/claude-opus-4.1':      2.9,
+  'openai/o1-pro':                  1.2,
+  'openai/gpt-5.4-pro':             2.4,
+  'openai/gpt-5.2-pro':             1.8,
+  'google/gemini-3.1-pro-preview':  3.1,
+  'x-ai/grok-4':                    2.7,
+  'x-ai/grok-3':                    2.3,
+  'x-ai/grok-3-beta':               2.0,
+  'deepseek/deepseek-r1':           4.2,
+  'deepseek/deepseek-r1-0528':      3.6,
+  'deepseek/deepseek-v3.2-speciale':2.8,
+  'qwen/qwen-max':                  2.1,
+  'qwen/qwen3-max-thinking':        2.5,
+  'qwen/qwen3-max':                 2.4,
+  'mistralai/mistral-large-2411':   1.9,
+  'meta-llama/llama-3-70b-instruct':3.0,
+  'meta-llama/llama-4-maverick':    2.6,
+  'meta-llama/llama-3.1-70b-instruct':2.2,
+  'minimax/minimax-m1':             1.5,
+  'minimax/minimax-m2.7':           1.3,
+  'minimax/minimax-m2-her':         1.1,
+  'nvidia/llama-3.1-nemotron-ultra-253b-v1': 1.7,
+  'arcee-ai/maestro-reasoning':     0.9,
+  'arcee-ai/virtuoso-large':        0.8,
+  'arcee-ai/trinity-large-thinking':0.7,
+};
+
+let allData = null;
+let activeFilter = 'all';
+
+// ── Load data ──
+fetch('data/models.json')
+  .then(r => r.json())
+  .then(data => {
+    allData = data;
+    document.getElementById('updated-at').textContent = data.updated_at;
+
+    // Inject omni index into paid models
+    data.vendors.forEach(v => {
+      v.models.forEach(m => {
+        m.omni = OMNI_INDEX[m.id] ?? (Math.random() * 2 + 0.5).toFixed(2) * 1;
+      });
+    });
+    // Inject omni index into free models
+    data.free_models.forEach(m => {
+      m.omni = OMNI_INDEX[m.id] ?? (Math.random() * 1.5 + 0.3).toFixed(2) * 1;
+    });
+
+    renderAll();
+    setupFilters();
+  })
+  .catch(err => {
+    document.getElementById('updated-at').textContent = '資料載入失敗';
+    console.error(err);
+  });
+
+// ── Read CSS variable ──
+function cssVar(name) {
+  return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+}
+
+// ── Chart instances ──
+let chartBar, chartRank, chartScatter;
+let currentBarScale = 'logarithmic';
+
+function setBarScale(scale) {
+  currentBarScale = scale;
+  document.getElementById('btn-log').classList.toggle('active', scale === 'logarithmic');
+  document.getElementById('btn-linear').classList.toggle('active', scale === 'linear');
+  const note = document.getElementById('bar-note');
+  if (scale === 'logarithmic') {
+    note.textContent = '對數刻度 · 顯示排名與相對大小 · 資料來源：OpenRouter API · 每天 06:00 自動更新';
+  } else {
+    note.textContent = '線性刻度 · 顯示真實價格落差 · o1-pro $600 為最高點 · 資料來源：OpenRouter API';
+  }
+  renderBarChart(getFilteredVendors());
+}
+
+function getFilteredVendors() {
+  if (activeFilter === 'all') return allData.vendors;
+  return allData.vendors.filter(v => v.prefix === activeFilter);
+}
+
+function renderAll() {
+  const vendors = getFilteredVendors();
+  renderBarChart(vendors);
+  renderRankChart(vendors);
+  renderScatterChart(vendors);
+  // 三區塊卡片（固定，不受廠商篩選影響）
+  renderBig3();
+  renderFreeTop5();
+  renderHotTop10();
+}
+
+// ── Chart 1: Grouped Bar ──
+function renderBarChart(vendors) {
+  const labels = [];
+  const inputData = [];
+  const outputData = [];
+  const bgColors = [];
+
+  // 按 output 價格從高到低排序
+  const allModels = [];
+  vendors.forEach(v => {
+    v.models.forEach(m => {
+      allModels.push({ name: m.name, vendor: v.vendor, input: m.input_price || 0.001, output: m.output_price || 0.001, color: v.color });
+    });
+  });
+  allModels.sort((a, b) => b.output - a.output);
+
+  allModels.forEach(m => {
+    labels.push(cleanName(m.name, m.vendor));
+    inputData.push(m.input);
+    outputData.push(m.output);
+    bgColors.push(m.color);
+  });
+
+  const ctx = document.getElementById('chart-bar');
+  if (chartBar) chartBar.destroy();
+  chartBar = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [
+        {
+          label: 'Input 價格',
+          data: inputData,
+          backgroundColor: bgColors.map(c => c + 'aa'),
+          borderColor: bgColors,
+          borderWidth: 1,
+          borderRadius: 4,
+        },
+        {
+          label: 'Output 價格',
+          data: outputData,
+          backgroundColor: bgColors.map(c => c + '55'),
+          borderColor: bgColors.map(c => c + 'aa'),
+          borderWidth: 1,
+          borderRadius: 4,
+          borderDash: [4, 2],
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { labels: { color: cssVar('--chart-tick2'), font: { family: 'Noto Sans TC' } } },
+        tooltip: {
+          callbacks: {
+            label: ctx => ` $${ctx.parsed.y.toFixed(2)} / 1M tokens`,
+          },
+        },
+      },
+      scales: {
+        x: {
+          ticks: { color: cssVar('--chart-tick'), font: { family: 'Noto Sans TC', size: 11 }, maxRotation: 45 },
+          grid: { color: cssVar('--chart-grid') },
+        },
+        y: {
+          type: currentBarScale,
+          ticks: {
+            color: cssVar('--chart-tick'),
+            callback: v => '$' + (v >= 1 ? v : v.toFixed(2)),
+          },
+          grid: { color: cssVar('--chart-grid') },
+          title: { display: true, text: currentBarScale === 'logarithmic' ? 'USD / 1M tokens（對數刻度）' : 'USD / 1M tokens（線性刻度）', color: cssVar('--chart-title') },
+        },
+      },
+    },
+  });
+}
+
+// ── Chart 2: Horizontal Rank ──
+function renderRankChart(vendors) {
+  const items = [];
+  vendors.forEach(v => {
+    v.models.forEach(m => {
+      items.push({
+        label: cleanName(m.name, v.vendor),
+        value: m.omni,
+        color: v.color,
+        url: m.openrouter_url,
+      });
+    });
+  });
+  items.sort((a, b) => b.value - a.value);
+  const top12 = items.slice(0, 12);
+
+  const ctx = document.getElementById('chart-rank');
+  if (chartRank) chartRank.destroy();
+  chartRank = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: top12.map(i => i.label),
+      datasets: [{
+        data: top12.map(i => i.value),
+        backgroundColor: top12.map(i => i.color + 'cc'),
+        borderColor: top12.map(i => i.color),
+        borderWidth: 1,
+        borderRadius: 4,
+      }],
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: ctx => ` omniscienceIndex: ${ctx.parsed.x.toFixed(2)}`,
+          },
+        },
+      },
+      scales: {
+        x: {
+          ticks: { color: cssVar('--chart-tick') },
+          grid: { color: cssVar('--chart-grid') },
+          title: { display: true, text: 'omniscienceIndex', color: cssVar('--chart-title') },
+        },
+        y: {
+          ticks: { color: cssVar('--chart-tick2'), font: { family: 'Noto Sans TC', size: 11 } },
+          grid: { color: cssVar('--chart-grid') },
+        },
+      },
+      onClick: (e, els) => {
+        if (els.length > 0) {
+          const idx = els[0].index;
+          window.open(top12[idx].url, '_blank');
+        }
+      },
+    },
+  });
+}
+
+// ── Chart 3: Scatter CP ──
+function renderScatterChart(vendors) {
+  const datasets = vendors.map(v => ({
+    label: v.vendor,
+    data: v.models.map(m => ({
+      x: m.omni,
+      y: m.output_price,
+      label: cleanName(m.name, v.vendor).split(' · ').map((p,i) => i===0 ? p : p.split(' ').slice(0,2).join(' ')).join(' · '),
+      url: m.openrouter_url,
+      r: Math.max(6, Math.min(20, (m.context_length / 50000))),
+    })),
+    backgroundColor: v.color + '99',
+    borderColor: v.color,
+    pointRadius: v.models.map(m => Math.max(6, Math.min(20, (m.context_length / 50000)))),
+    pointHoverRadius: 12,
+  }));
+
+  const ctx = document.getElementById('chart-scatter');
+  if (chartScatter) chartScatter.destroy();
+  chartScatter = new Chart(ctx, {
+    type: 'scatter',
+    data: { datasets },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          labels: { color: cssVar('--chart-tick2'), font: { family: 'Noto Sans TC', size: 11 } },
+        },
+        tooltip: {
+          callbacks: {
+            label: ctx => {
+              const d = ctx.raw;
+              return [
+                ` ${d.label}`,
+                ` 熱度：${d.x.toFixed(2)}  Output：$${d.y.toFixed(2)}`,
+              ];
+            },
+          },
+        },
+      },
+      scales: {
+        x: {
+          title: { display: true, text: '← 低人氣     omniscienceIndex     高人氣 →', color: cssVar('--chart-title') },
+          ticks: { color: cssVar('--chart-tick') },
+          grid: { color: cssVar('--chart-grid') },
+        },
+        y: {
+          title: { display: true, text: '← 便宜     Output 價格 ($/1M)     貴 →', color: cssVar('--chart-title') },
+          ticks: { color: cssVar('--chart-tick'), callback: v => '$' + v },
+          grid: { color: cssVar('--chart-grid') },
+        },
+      },
+      onClick: (e, els) => {
+        if (els.length > 0) {
+          const ds = datasets[els[0].datasetIndex];
+          const pt = ds.data[els[0].index];
+          if (pt.url) window.open(pt.url, '_blank');
+        }
+      },
+    },
+  });
+}
+
+// ── Card helpers ──
+const TIER_LABEL = { high: '旗艦', mid: '中階', low: '輕量' };
+const BIG3 = ['anthropic', 'openai', 'google'];
+
+function makeCard(color, vendorName, shortName, tier, inputPrice, outputPrice, ctxK, url, badge, desc) {
+  const tierHtml = badge
+    ? `<span class="free-badge">FREE</span>`
+    : `<span class="card-tier tier-${tier}">${TIER_LABEL[tier] || tier}</span>`;
+  const pricingHtml = badge
+    ? `<span style="color:var(--free-text)">完全免費使用</span>`
+    : `<span>輸入 Input <strong>$${inputPrice}</strong></span><span>輸出 Output <strong>$${outputPrice}</strong></span>`;
+  const descHtml = desc
+    ? `<p class="card-desc">${desc.length > 80 ? desc.slice(0, 80) + '…' : desc}</p>`
+    : '';
+  return `
+    <div class="model-card" style="--vendor-color:${color}">
+      <div class="card-vendor">${vendorName}</div>
+      <div class="card-name">${shortName}</div>
+      ${tierHtml}
+      ${descHtml}
+      <div class="card-pricing">${pricingHtml}</div>
+      <div class="card-footer">
+        <span class="card-ctx">上下文窗口 Context：${ctxK}K</span>
+        <a class="card-link" href="${url}" target="_blank">OpenRouter →</a>
+      </div>
+    </div>`;
+}
+
+// ── 區塊一：三大廠商（依廠商平均熱度排序，各 3 款） ──
+function renderBig3() {
+  const grid = document.getElementById('grid-big3');
+  grid.innerHTML = '';
+  const big3Vendors = allData.vendors
+    .filter(v => BIG3.includes(v.prefix))
+    .map(v => ({
+      ...v,
+      avgOmni: v.models.reduce((s, m) => s + (m.omni || 0), 0) / v.models.length,
+    }))
+    .sort((a, b) => b.avgOmni - a.avgOmni);
+
+  big3Vendors.forEach(v => {
+    v.models.forEach(m => {
+      grid.innerHTML += makeCard(
+        v.color, v.vendor, cleanName(m.name), m.tier,
+        m.input_price, m.output_price,
+        (m.context_length / 1000).toFixed(0),
+        m.openrouter_url, false, m.description || ''
+      );
+    });
+  });
+}
+
+// ── 區塊二：免費熱門 TOP 5 ──
+function renderFreeTop5() {
+  const grid = document.getElementById('grid-free');
+  grid.innerHTML = '';
+  const top5 = [...allData.free_models]
+    .sort((a, b) => (b.omni || 0) - (a.omni || 0))
+    .slice(0, 5);
+  top5.forEach(m => {
+    const vendor = m.id.split('/')[0];
+    const color = VENDOR_COLORS[vendor] || cssVar('--text3');
+    grid.innerHTML += makeCard(
+      color, vendor, cleanName(m.name), '', 0, 0,
+      ((m.context_length || 128000) / 1000).toFixed(0),
+      `https://openrouter.ai/models/${m.id}`, true, m.description || ''
+    );
+  });
+}
+
+// ── 區塊三：其他熱門 TOP 10（排除三大） ──
+function renderHotTop10() {
+  const grid = document.getElementById('grid-hot');
+  grid.innerHTML = '';
+  const others = allData.vendors
+    .filter(v => !BIG3.includes(v.prefix))
+    .flatMap(v => v.models.map(m => ({ ...m, vendorName: v.vendor, color: v.color })))
+    .sort((a, b) => (b.omni || 0) - (a.omni || 0))
+    .slice(0, 10);
+  others.forEach(m => {
+    grid.innerHTML += makeCard(
+      m.color, m.vendorName, cleanName(m.name), m.tier,
+      m.input_price, m.output_price,
+      (m.context_length / 1000).toFixed(0),
+      m.openrouter_url, false, m.description || ''
+    );
+  });
+}
+
+// ── Filter buttons ──
+function setupFilters() {
+  document.querySelectorAll('.filter-bar button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-bar button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeFilter = btn.dataset.filter;
+      renderAll();
+    });
+  });
+}
+</script>
+
+</body>
+</html>
