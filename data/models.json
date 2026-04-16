@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-16 06:43",
+  "updated_at": "2026-04-17 06:42",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -15,7 +15,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/anthropic/claude-opus-4.6-fast",
           "tier": "high",
-          "omniscience_index": 13.5,
+          "omniscience_index": 26.167,
           "description": "Fast-mode variant of [Opus 4.6](/anthropic/claude-opus-4.6) - identical capabilities with higher output speed at premium 6x pricing.\n\nLearn more in Anthropic's docs: https://platform.claude.com/docs/en/build-with-claude/fast-mode"
         },
         {
@@ -27,7 +27,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/anthropic/claude-opus-4.1",
           "tier": "mid",
-          "omniscience_index": 13.5,
+          "omniscience_index": 26.167,
           "description": "Claude Opus 4.1 is an updated version of Anthropic’s flagship model, offering improved performance in coding, reasoning, and agentic tasks. It achieves 74.5% on SWE-bench Verified and shows notable gains..."
         },
         {
@@ -39,7 +39,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/anthropic/claude-opus-4",
           "tier": "low",
-          "omniscience_index": 13.5,
+          "omniscience_index": 26.167,
           "description": "Claude Opus 4 is benchmarked as the world’s best coding model, at time of release, bringing sustained performance on complex, long-running tasks and agent workflows. It sets new benchmarks in..."
         }
       ]
@@ -371,7 +371,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/minimax/minimax-m2.7",
           "tier": "mid",
-          "omniscience_index": 0.683,
+          "omniscience_index": 1.2,
           "description": "MiniMax-M2.7 is a next-generation large language model designed for autonomous, real-world productivity and continuous improvement. Built to actively participate in its own evolution, M2.7 integrates advanced agentic capabilities through multi-agent..."
         },
         {
