@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-20 06:38",
+  "updated_at": "2026-04-21 06:45",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -230,7 +230,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/qwen/qwen-max",
           "tier": "high",
-          "omniscience_index": 2.2,
+          "omniscience_index": 10.2,
           "description": "Qwen-Max, based on Qwen2.5, provides the best inference performance among [Qwen models](/qwen), especially for complex multi-step tasks. It's a large-scale MoE model that has been pretrained on over 20 trillion..."
         },
         {
@@ -359,7 +359,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/minimax/minimax-m1",
           "tier": "high",
-          "omniscience_index": 1.2,
+          "omniscience_index": 10.2,
           "description": "MiniMax-M1 is a large-scale, open-weight reasoning model designed for extended context and high-efficiency inference. It leverages a hybrid Mixture-of-Experts (MoE) architecture paired with a custom \"lightning attention\" mechanism, allowing it..."
         },
         {
@@ -371,20 +371,20 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/minimax/minimax-m2.7",
           "tier": "mid",
-          "omniscience_index": 1.2,
+          "omniscience_index": 10.2,
           "description": "MiniMax-M2.7 is a next-generation large language model designed for autonomous, real-world productivity and continuous improvement. Built to actively participate in its own evolution, M2.7 integrates advanced agentic capabilities through multi-agent..."
         },
         {
-          "id": "minimax/minimax-m2-her",
-          "name": "MiniMax: MiniMax M2-her",
-          "input_price": 0.3,
+          "id": "minimax/minimax-m2.5",
+          "name": "MiniMax: MiniMax M2.5",
+          "input_price": 0.15,
           "output_price": 1.2,
-          "context_length": 65536,
+          "context_length": 196608,
           "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/minimax/minimax-m2-her",
+          "openrouter_url": "https://openrouter.ai/models/minimax/minimax-m2.5",
           "tier": "low",
-          "omniscience_index": 1.2,
-          "description": "MiniMax M2-her is a dialogue-first large language model built for immersive roleplay, character-driven chat, and expressive multi-turn conversations. Designed to stay consistent in tone and personality, it supports rich message..."
+          "omniscience_index": 10.2,
+          "description": "MiniMax-M2.5 is a SOTA large language model designed for real-world productivity. Trained in a diverse range of complex real-world digital working environments, M2.5 builds upon the coding expertise of M2.1..."
         }
       ]
     },
