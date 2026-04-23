@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-23 06:50",
+  "updated_at": "2026-04-24 06:49",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -273,7 +273,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/mistralai/mistral-large-2411",
           "tier": "high",
-          "omniscience_index": 3.75,
+          "omniscience_index": 1.8,
           "description": "Mistral Large 2 2411 is an update of [Mistral Large 2](/mistralai/mistral-large) released together with [Pixtral Large 2411](/mistralai/pixtral-large-2411) It provides a significant upgrade on the previous [Mistral Large 24.07](/mistralai/mistral-large-2407), with notable..."
         },
         {
@@ -285,7 +285,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/mistralai/mistral-large-2407",
           "tier": "mid",
-          "omniscience_index": 3.75,
+          "omniscience_index": 1.8,
           "description": "This is Mistral AI's flagship model, Mistral Large 2 (version mistral-large-2407). It's a proprietary weights-available model and excels at reasoning, code, JSON, chat, and more. Read the launch announcement [here](https://mistral.ai/news/mistral-large-2407/)...."
         },
         {
@@ -297,7 +297,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/mistralai/pixtral-large-2411",
           "tier": "low",
-          "omniscience_index": 3.75,
+          "omniscience_index": 1.8,
           "description": "Pixtral Large is a 124B parameter, open-weight, multimodal model built on top of [Mistral Large 2](/mistralai/mistral-large-2411). The model is able to understand documents, charts and natural images. The model is..."
         }
       ]
@@ -328,7 +328,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/meta-llama/llama-4-maverick",
           "tier": "mid",
-          "omniscience_index": 3.75,
+          "omniscience_index": 2.8,
           "description": "Llama 4 Maverick 17B Instruct (128E) is a high-capacity multimodal language model from Meta, built on a mixture-of-experts (MoE) architecture with 128 experts and 17 billion active parameters per forward..."
         },
         {
@@ -375,16 +375,16 @@
           "description": "MiniMax-M2.7 is a next-generation large language model designed for autonomous, real-world productivity and continuous improvement. Built to actively participate in its own evolution, M2.7 integrates advanced agentic capabilities through multi-agent..."
         },
         {
-          "id": "minimax/minimax-m2.5",
-          "name": "MiniMax: MiniMax M2.5",
-          "input_price": 0.15,
+          "id": "minimax/minimax-m2-her",
+          "name": "MiniMax: MiniMax M2-her",
+          "input_price": 0.3,
           "output_price": 1.2,
-          "context_length": 196608,
+          "context_length": 65536,
           "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/minimax/minimax-m2.5",
+          "openrouter_url": "https://openrouter.ai/models/minimax/minimax-m2-her",
           "tier": "low",
           "omniscience_index": 10.2,
-          "description": "MiniMax-M2.5 is a SOTA large language model designed for real-world productivity. Trained in a diverse range of complex real-world digital working environments, M2.5 builds upon the coding expertise of M2.1..."
+          "description": "MiniMax M2-her is a dialogue-first large language model built for immersive roleplay, character-driven chat, and expressive multi-turn conversations. Designed to stay consistent in tone and personality, it supports rich message..."
         }
       ]
     },
