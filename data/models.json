@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-25 06:40",
+  "updated_at": "2026-04-26 06:39",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -179,18 +179,6 @@
       "color": "#EF4444",
       "models": [
         {
-          "id": "deepseek/deepseek-v4-pro",
-          "name": "DeepSeek: DeepSeek V4 Pro",
-          "input_price": 1.74,
-          "output_price": 3.48,
-          "context_length": 1048576,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro",
-          "tier": "high",
-          "omniscience_index": 32.933,
-          "description": "DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reasoning, coding,..."
-        },
-        {
           "id": "deepseek/deepseek-r1",
           "name": "DeepSeek: R1",
           "input_price": 0.7,
@@ -198,7 +186,7 @@
           "context_length": 64000,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-r1",
-          "tier": "mid",
+          "tier": "high",
           "omniscience_index": 4.0,
           "description": "DeepSeek R1 is here: Performance on par with [OpenAI o1](/openai/o1), but open-sourced and with fully open reasoning tokens. It's 671B parameters in size, with 37B active in an inference pass...."
         },
@@ -210,9 +198,21 @@
           "context_length": 163840,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-r1-0528",
-          "tier": "low",
+          "tier": "mid",
           "omniscience_index": 4.0,
           "description": "May 28th update to the [original DeepSeek R1](/deepseek/deepseek-r1) Performance on par with [OpenAI o1](/openai/o1), but open-sourced and with fully open reasoning tokens. It's 671B parameters in size, with 37B active..."
+        },
+        {
+          "id": "deepseek/deepseek-v3.2-speciale",
+          "name": "DeepSeek: DeepSeek V3.2 Speciale",
+          "input_price": 0.4,
+          "output_price": 1.2,
+          "context_length": 163840,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v3.2-speciale",
+          "tier": "low",
+          "omniscience_index": 15.8,
+          "description": "DeepSeek-V3.2-Speciale is a high-compute variant of DeepSeek-V3.2 optimized for maximum reasoning and agentic performance. It builds on DeepSeek Sparse Attention (DSA) for efficient long-context processing, then scales post-training reinforcement learning..."
         }
       ]
     },
