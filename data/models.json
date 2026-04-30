@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-04-30 06:58",
+  "updated_at": "2026-05-01 06:54",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -144,7 +144,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/x-ai/grok-4",
           "tier": "high",
-          "omniscience_index": 15.35,
+          "omniscience_index": 18.317,
           "description": "Grok 4 is xAI's latest reasoning model with a 256k context window. It supports parallel tool calling, structured outputs, and both image and text inputs. Note that reasoning is not..."
         },
         {
@@ -156,7 +156,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/x-ai/grok-3",
           "tier": "mid",
-          "omniscience_index": 15.8,
+          "omniscience_index": 18.317,
           "description": "Grok 3 is the latest model from xAI. It's their flagship model that excels at enterprise use cases like data extraction, coding, and text summarization. Possesses deep domain knowledge in..."
         },
         {
@@ -168,7 +168,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/x-ai/grok-3-beta",
           "tier": "low",
-          "omniscience_index": 15.8,
+          "omniscience_index": 18.317,
           "description": "Grok 3 is the latest model from xAI. It's their flagship model that excels at enterprise use cases like data extraction, coding, and text summarization. Possesses deep domain knowledge in..."
         }
       ]
