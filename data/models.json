@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-04 06:44",
+  "updated_at": "2026-05-05 06:57",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -265,6 +265,18 @@
       "color": "#06B6D4",
       "models": [
         {
+          "id": "mistralai/mistral-medium-3-5",
+          "name": "Mistral: Mistral Medium 3.5",
+          "input_price": 1.5,
+          "output_price": 7.5,
+          "context_length": 262144,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/mistralai/mistral-medium-3-5",
+          "tier": "high",
+          "omniscience_index": 15.8,
+          "description": "Mistral Medium 3.5 is a dense 128B instruction-following model from Mistral AI. It supports text and image inputs with text output, and is designed for agentic workflows, coding, and complex..."
+        },
+        {
           "id": "mistralai/mistral-large-2411",
           "name": "Mistral Large 2411",
           "input_price": 2.0,
@@ -272,7 +284,7 @@
           "context_length": 131072,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/mistralai/mistral-large-2411",
-          "tier": "high",
+          "tier": "mid",
           "omniscience_index": 1.8,
           "description": "Mistral Large 2 2411 is an update of [Mistral Large 2](/mistralai/mistral-large) released together with [Pixtral Large 2411](/mistralai/pixtral-large-2411) It provides a significant upgrade on the previous [Mistral Large 24.07](/mistralai/mistral-large-2407), with notable..."
         },
@@ -284,21 +296,9 @@
           "context_length": 131072,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/mistralai/mistral-large-2407",
-          "tier": "mid",
-          "omniscience_index": 1.8,
-          "description": "This is Mistral AI's flagship model, Mistral Large 2 (version mistral-large-2407). It's a proprietary weights-available model and excels at reasoning, code, JSON, chat, and more. Read the launch announcement [here](https://mistral.ai/news/mistral-large-2407/)...."
-        },
-        {
-          "id": "mistralai/pixtral-large-2411",
-          "name": "Mistral: Pixtral Large 2411",
-          "input_price": 2.0,
-          "output_price": 6.0,
-          "context_length": 131072,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/mistralai/pixtral-large-2411",
           "tier": "low",
           "omniscience_index": 1.8,
-          "description": "Pixtral Large is a 124B parameter, open-weight, multimodal model built on top of [Mistral Large 2](/mistralai/mistral-large-2411). The model is able to understand documents, charts and natural images. The model is..."
+          "description": "This is Mistral AI's flagship model, Mistral Large 2 (version mistral-large-2407). It's a proprietary weights-available model and excels at reasoning, code, JSON, chat, and more. Read the launch announcement [here](https://mistral.ai/news/mistral-large-2407/)...."
         }
       ]
     },
