@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-06 06:57",
+  "updated_at": "2026-05-07 06:54",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -203,16 +203,16 @@
           "description": "May 28th update to the [original DeepSeek R1](/deepseek/deepseek-r1) Performance on par with [OpenAI o1](/openai/o1), but open-sourced and with fully open reasoning tokens. It's 671B parameters in size, with 37B active..."
         },
         {
-          "id": "deepseek/deepseek-v3.2-speciale",
-          "name": "DeepSeek: DeepSeek V3.2 Speciale",
-          "input_price": 0.4,
-          "output_price": 1.2,
+          "id": "deepseek/deepseek-v3.1-terminus",
+          "name": "DeepSeek: DeepSeek V3.1 Terminus",
+          "input_price": 0.27,
+          "output_price": 0.95,
           "context_length": 163840,
           "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v3.2-speciale",
+          "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v3.1-terminus",
           "tier": "low",
-          "omniscience_index": 15.8,
-          "description": "DeepSeek-V3.2-Speciale is a high-compute variant of DeepSeek-V3.2 optimized for maximum reasoning and agentic performance. It builds on DeepSeek Sparse Attention (DSA) for efficient long-context processing, then scales post-training reinforcement learning..."
+          "omniscience_index": 32.933,
+          "description": "DeepSeek-V3.1 Terminus is an update to [DeepSeek V3.1](/deepseek/deepseek-chat-v3.1) that maintains the model's original capabilities while addressing issues reported by users, including language consistency and agent capabilities, further optimizing the model's..."
         }
       ]
     },
