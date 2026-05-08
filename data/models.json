@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-08 07:01",
+  "updated_at": "2026-05-09 06:56",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -365,7 +365,7 @@
         {
           "id": "minimax/minimax-m2.7",
           "name": "MiniMax: MiniMax M2.7",
-          "input_price": 0.3,
+          "input_price": 0.299,
           "output_price": 1.2,
           "context_length": 196608,
           "is_free": false,
@@ -394,18 +394,6 @@
       "color": "#84CC16",
       "models": [
         {
-          "id": "nvidia/llama-3.1-nemotron-70b-instruct",
-          "name": "NVIDIA: Llama 3.1 Nemotron 70B Instruct",
-          "input_price": 1.2,
-          "output_price": 1.2,
-          "context_length": 131072,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/nvidia/llama-3.1-nemotron-70b-instruct",
-          "tier": "high",
-          "omniscience_index": 32.933,
-          "description": "NVIDIA's Llama 3.1 Nemotron 70B is a language model designed for generating precise and useful responses. Leveraging [Llama 3.1 70B](/models/meta-llama/llama-3.1-70b-instruct) architecture and Reinforcement Learning from Human Feedback (RLHF), it excels..."
-        },
-        {
           "id": "nvidia/nemotron-3-super-120b-a12b",
           "name": "NVIDIA: Nemotron 3 Super",
           "input_price": 0.09,
@@ -413,7 +401,7 @@
           "context_length": 262144,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3-super-120b-a12b",
-          "tier": "mid",
+          "tier": "high",
           "omniscience_index": 15.8,
           "description": "NVIDIA Nemotron 3 Super is a 120B-parameter open hybrid MoE model, activating just 12B parameters for maximum compute efficiency and accuracy in complex multi-agent applications. Built on a hybrid Mamba-Transformer..."
         },
@@ -425,9 +413,21 @@
           "context_length": 131072,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/nvidia/llama-3.3-nemotron-super-49b-v1.5",
-          "tier": "low",
+          "tier": "mid",
           "omniscience_index": 15.8,
           "description": "Llama-3.3-Nemotron-Super-49B-v1.5 is a 49B-parameter, English-centric reasoning/chat model derived from Meta’s Llama-3.3-70B-Instruct with a 128K context. It’s post-trained for agentic workflows (RAG, tool calling) via SFT across math, code, science, and..."
+        },
+        {
+          "id": "nvidia/nemotron-3-nano-30b-a3b",
+          "name": "NVIDIA: Nemotron 3 Nano 30B A3B",
+          "input_price": 0.05,
+          "output_price": 0.2,
+          "context_length": 262144,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3-nano-30b-a3b",
+          "tier": "low",
+          "omniscience_index": 15.8,
+          "description": "NVIDIA Nemotron 3 Nano 30B A3B is a small language MoE model with highest compute efficiency and accuracy for developers to build specialized agentic AI systems. The model is fully..."
         }
       ]
     },
