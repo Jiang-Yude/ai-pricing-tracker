@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-11 06:51",
+  "updated_at": "2026-05-12 06:56",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -470,7 +470,7 @@
           "openrouter_url": "https://openrouter.ai/models/arcee-ai/trinity-large-thinking",
           "tier": "low",
           "omniscience_index": 0.8,
-          "description": "Trinity Large Thinking is a powerful open source reasoning model from the team at Arcee AI. It shows strong performance in PinchBench, agentic workloads, and reasoning tasks. Launch video: https://youtu.be/Gc82AXLa0Rg?si=4RLn6WBz33qT--B7"
+          "description": "Trinity Large Thinking is a powerful open source reasoning model from the team at Arcee AI. It shows strong performance in PinchBench, agentic workloads, and reasoning tasks. Launch video: https://youtu.be/Gc82AXLa0Rg?si=4RLn6WBz33qT--B7..."
         }
       ]
     },
