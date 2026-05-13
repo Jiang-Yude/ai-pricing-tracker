@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-13 07:04",
+  "updated_at": "2026-05-14 07:06",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -15,7 +15,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/anthropic/claude-opus-4.7-fast",
           "tier": "high",
-          "omniscience_index": 26.167,
+          "omniscience_index": 26.1666666666667,
           "description": "Fast-mode variant of [Opus 4.7](/anthropic/claude-opus-4.7) - identical capabilities with higher output speed at premium 6x pricing.\n\nLearn more in Anthropic's docs: https://platform.claude.com/docs/en/build-with-claude/fast-mode"
         },
         {
@@ -27,7 +27,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/anthropic/claude-opus-4.6-fast",
           "tier": "mid",
-          "omniscience_index": 26.167,
+          "omniscience_index": 26.1666666666667,
           "description": "Fast-mode variant of [Opus 4.6](/anthropic/claude-opus-4.6) - identical capabilities with higher output speed at premium 6x pricing.\n\nLearn more in Anthropic's docs: https://platform.claude.com/docs/en/build-with-claude/fast-mode"
         },
         {
@@ -39,7 +39,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/anthropic/claude-opus-4.1",
           "tier": "low",
-          "omniscience_index": 26.167,
+          "omniscience_index": 26.1666666666667,
           "description": "Claude Opus 4.1 is an updated version of Anthropic’s flagship model, offering improved performance in coding, reasoning, and agentic tasks. It achieves 74.5% on SWE-bench Verified and shows notable gains..."
         }
       ]
@@ -58,7 +58,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/openai/o1-pro",
           "tier": "high",
-          "omniscience_index": 32.933,
+          "omniscience_index": 32.9333333333333,
           "description": "The o1 series of models are trained with reinforcement learning to think before they answer and perform complex reasoning. The o1-pro model uses more compute to think harder and provide..."
         },
         {
@@ -70,7 +70,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/openai/gpt-5.5-pro",
           "tier": "mid",
-          "omniscience_index": 32.933,
+          "omniscience_index": 32.9333333333333,
           "description": "GPT-5.5 Pro is OpenAI’s high-capability model optimized for deep reasoning and accuracy on complex, high-stakes workloads. It features a 1M+ token context window (922K input, 128K output) with support for..."
         },
         {
@@ -82,7 +82,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/openai/gpt-5.4-pro",
           "tier": "low",
-          "omniscience_index": 32.933,
+          "omniscience_index": 32.9333333333333,
           "description": "GPT-5.4 Pro is OpenAI's most advanced model, building on GPT-5.4's unified architecture with enhanced reasoning capabilities for complex, high-stakes tasks. It features a 1M+ token context window (922K input, 128K..."
         }
       ]
@@ -101,7 +101,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/google/gemini-3.1-pro-preview-customtools",
           "tier": "high",
-          "omniscience_index": 32.933,
+          "omniscience_index": 32.9333333333333,
           "description": "Gemini 3.1 Pro Preview Custom Tools is a variant of Gemini 3.1 Pro that improves tool selection behavior by preventing overuse of a general bash tool when more efficient third-party..."
         },
         {
@@ -113,7 +113,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/google/gemini-3.1-pro-preview",
           "tier": "mid",
-          "omniscience_index": 32.933,
+          "omniscience_index": 32.9333333333333,
           "description": "Gemini 3.1 Pro Preview is Google’s frontier reasoning model, delivering enhanced software engineering performance, improved agentic reliability, and more efficient token usage across complex workflows. Building on the multimodal foundation..."
         },
         {
@@ -125,7 +125,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/google/gemini-3-pro-image-preview",
           "tier": "low",
-          "omniscience_index": 32.933,
+          "omniscience_index": 32.9333333333333,
           "description": "Nano Banana Pro is Google’s most advanced image-generation and editing model, built on Gemini 3 Pro. It extends the original Nano Banana with significantly improved multimodal reasoning, real-world grounding, and..."
         }
       ]
@@ -144,7 +144,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/x-ai/grok-4",
           "tier": "high",
-          "omniscience_index": 18.317,
+          "omniscience_index": 18.3166666666667,
           "description": "Grok 4 is xAI's latest reasoning model with a 256k context window. It supports parallel tool calling, structured outputs, and both image and text inputs. Note that reasoning is not..."
         },
         {
@@ -156,7 +156,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/x-ai/grok-3",
           "tier": "mid",
-          "omniscience_index": 18.317,
+          "omniscience_index": 18.3166666666667,
           "description": "Grok 3 is the latest model from xAI. It's their flagship model that excels at enterprise use cases like data extraction, coding, and text summarization. Possesses deep domain knowledge in..."
         },
         {
@@ -168,7 +168,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/x-ai/grok-3-beta",
           "tier": "low",
-          "omniscience_index": 18.317,
+          "omniscience_index": 18.3166666666667,
           "description": "Grok 3 is the latest model from xAI. It's their flagship model that excels at enterprise use cases like data extraction, coding, and text summarization. Possesses deep domain knowledge in..."
         }
       ]
@@ -211,7 +211,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v3.1-terminus",
           "tier": "low",
-          "omniscience_index": 32.933,
+          "omniscience_index": 32.9333333333333,
           "description": "DeepSeek-V3.1 Terminus is an update to [DeepSeek V3.1](/deepseek/deepseek-chat-v3.1) that maintains the model's original capabilities while addressing issues reported by users, including language consistency and agent capabilities, further optimizing the model's..."
         }
       ]
@@ -230,20 +230,8 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/qwen/qwen3.6-max-preview",
           "tier": "high",
-          "omniscience_index": 32.933,
+          "omniscience_index": 32.9333333333333,
           "description": "Qwen3.6-Max-Preview is a proprietary frontier model from Alibaba Cloud built on a sparse mixture-of-experts architecture with approximately 1 trillion total parameters. It is optimized for agentic coding, tool use, and..."
-        },
-        {
-          "id": "qwen/qwen-max",
-          "name": "Qwen: Qwen-Max ",
-          "input_price": 1.04,
-          "output_price": 4.16,
-          "context_length": 32768,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/qwen/qwen-max",
-          "tier": "mid",
-          "omniscience_index": 10.2,
-          "description": "Qwen-Max, based on Qwen2.5, provides the best inference performance among [Qwen models](/qwen), especially for complex multi-step tasks. It's a large-scale MoE model that has been pretrained on over 20 trillion..."
         },
         {
           "id": "qwen/qwen3-max-thinking",
@@ -253,9 +241,21 @@
           "context_length": 262144,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/qwen/qwen3-max-thinking",
-          "tier": "low",
+          "tier": "mid",
           "omniscience_index": 15.8,
           "description": "Qwen3-Max-Thinking is the flagship reasoning model in the Qwen3 series, designed for high-stakes cognitive tasks that require deep, multi-step reasoning. By significantly scaling model capacity and reinforcement learning compute, it..."
+        },
+        {
+          "id": "qwen/qwen3-max",
+          "name": "Qwen: Qwen3 Max",
+          "input_price": 0.78,
+          "output_price": 3.9,
+          "context_length": 262144,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/qwen/qwen3-max",
+          "tier": "low",
+          "omniscience_index": 15.8,
+          "description": "Qwen3-Max is an updated release built on the Qwen3 series, offering major improvements in reasoning, instruction following, multilingual support, and long-tail knowledge coverage compared to the January 2025 version. It..."
         }
       ]
     },
@@ -340,7 +340,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/meta-llama/llama-3.1-70b-instruct",
           "tier": "low",
-          "omniscience_index": 32.933,
+          "omniscience_index": 32.9333333333333,
           "description": "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 70B instruct-tuned version is optimized for high quality dialogue usecases. It has demonstrated strong..."
         }
       ]
