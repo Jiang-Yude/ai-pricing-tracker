@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-20 07:03",
+  "updated_at": "2026-05-21 07:14",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -359,7 +359,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/minimax/minimax-m1",
           "tier": "high",
-          "omniscience_index": 10.2,
+          "omniscience_index": 14.0833333333333,
           "description": "MiniMax-M1 is a large-scale, open-weight reasoning model designed for extended context and high-efficiency inference. It leverages a hybrid Mixture-of-Experts (MoE) architecture paired with a custom \"lightning attention\" mechanism, allowing it..."
         },
         {
@@ -371,7 +371,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/minimax/minimax-m2.7",
           "tier": "mid",
-          "omniscience_index": 10.2,
+          "omniscience_index": 14.0833333333333,
           "description": "MiniMax-M2.7 is a next-generation large language model designed for autonomous, real-world productivity and continuous improvement. Built to actively participate in its own evolution, M2.7 integrates advanced agentic capabilities through multi-agent..."
         },
         {
@@ -383,7 +383,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/minimax/minimax-m2-her",
           "tier": "low",
-          "omniscience_index": 10.2,
+          "omniscience_index": 14.0833333333333,
           "description": "MiniMax M2-her is a dialogue-first large language model built for immersive roleplay, character-driven chat, and expressive multi-turn conversations. Designed to stay consistent in tone and personality, it supports rich message..."
         }
       ]
