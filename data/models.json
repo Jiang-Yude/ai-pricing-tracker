@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-26 07:04",
+  "updated_at": "2026-05-27 07:11",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -222,18 +222,6 @@
       "color": "#F59E0B",
       "models": [
         {
-          "id": "qwen/qwen3.7-max",
-          "name": "Qwen: Qwen3.7 Max",
-          "input_price": 2.5,
-          "output_price": 7.5,
-          "context_length": 1000000,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/qwen/qwen3.7-max",
-          "tier": "high",
-          "omniscience_index": 15.8,
-          "description": "Qwen3.7-Max is the flagship model in Alibaba's Qwen3.7 series. It supports text input and output and is designed for agent-centric workloads, with particular strengths in coding, office and productivity tasks,..."
-        },
-        {
           "id": "qwen/qwen3.6-max-preview",
           "name": "Qwen: Qwen3.6 Max Preview",
           "input_price": 1.04,
@@ -241,7 +229,7 @@
           "context_length": 262144,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/qwen/qwen3.6-max-preview",
-          "tier": "mid",
+          "tier": "high",
           "omniscience_index": 32.9333333333333,
           "description": "Qwen3.6-Max-Preview is a proprietary frontier model from Alibaba Cloud built on a sparse mixture-of-experts architecture with approximately 1 trillion total parameters. It is optimized for agentic coding, tool use, and..."
         },
@@ -253,9 +241,21 @@
           "context_length": 262144,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/qwen/qwen3-max-thinking",
-          "tier": "low",
+          "tier": "mid",
           "omniscience_index": 15.8,
           "description": "Qwen3-Max-Thinking is the flagship reasoning model in the Qwen3 series, designed for high-stakes cognitive tasks that require deep, multi-step reasoning. By significantly scaling model capacity and reinforcement learning compute, it..."
+        },
+        {
+          "id": "qwen/qwen3-max",
+          "name": "Qwen: Qwen3 Max",
+          "input_price": 0.78,
+          "output_price": 3.9,
+          "context_length": 262144,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/qwen/qwen3-max",
+          "tier": "low",
+          "omniscience_index": 15.8,
+          "description": "Qwen3-Max is an updated release built on the Qwen3 series, offering major improvements in reasoning, instruction following, multilingual support, and long-tail knowledge coverage compared to the January 2025 version. It..."
         }
       ]
     },
