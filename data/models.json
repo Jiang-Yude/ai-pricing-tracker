@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-28 07:18",
+  "updated_at": "2026-05-29 07:18",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -15,7 +15,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/anthropic/claude-opus-4.7-fast",
           "tier": "high",
-          "omniscience_index": 26.1666666666667,
+          "omniscience_index": 27.4333333333333,
           "description": "Fast-mode variant of [Opus 4.7](/anthropic/claude-opus-4.7) - identical capabilities with higher output speed at premium 6x pricing.\n\nLearn more in Anthropic's docs: https://platform.claude.com/docs/en/build-with-claude/fast-mode"
         },
         {
@@ -27,7 +27,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/anthropic/claude-opus-4.6-fast",
           "tier": "mid",
-          "omniscience_index": 26.1666666666667,
+          "omniscience_index": 27.4333333333333,
           "description": "Fast-mode variant of [Opus 4.6](/anthropic/claude-opus-4.6) - identical capabilities with higher output speed at premium 6x pricing.\n\nLearn more in Anthropic's docs: https://platform.claude.com/docs/en/build-with-claude/fast-mode"
         },
         {
@@ -39,7 +39,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/anthropic/claude-opus-4.1",
           "tier": "low",
-          "omniscience_index": 26.1666666666667,
+          "omniscience_index": 27.4333333333333,
           "description": "Claude Opus 4.1 is an updated version of Anthropic’s flagship model, offering improved performance in coding, reasoning, and agentic tasks. It achieves 74.5% on SWE-bench Verified and shows notable gains..."
         }
       ]
