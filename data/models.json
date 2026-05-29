@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-29 07:18",
+  "updated_at": "2026-05-30 07:14",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -480,6 +480,18 @@
       "color": "#F97316",
       "models": [
         {
+          "id": "stepfun/step-3.7-flash",
+          "name": "StepFun: Step 3.7 Flash",
+          "input_price": 0.2,
+          "output_price": 1.15,
+          "context_length": 256000,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/stepfun/step-3.7-flash",
+          "tier": "high",
+          "omniscience_index": 22.6833333333333,
+          "description": "Step 3.7 Flash is StepFun's latest high-efficiency multimodal Mixture-of-Experts model. It pairs a 196B-parameter language backbone with a vision encoder for native image and video understanding, activating roughly 11B parameters..."
+        },
+        {
           "id": "stepfun/step-3.5-flash",
           "name": "StepFun: Step 3.5 Flash",
           "input_price": 0.09,
@@ -487,7 +499,7 @@
           "context_length": 262144,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/stepfun/step-3.5-flash",
-          "tier": "high",
+          "tier": "mid",
           "omniscience_index": 22.6833333333333,
           "description": "Step 3.5 Flash is StepFun's most capable open-source foundation model. Built on a sparse Mixture of Experts (MoE) architecture, it selectively activates only 11B of its 196B parameters per token...."
         }
