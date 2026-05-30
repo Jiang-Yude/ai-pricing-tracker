@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-30 07:14",
+  "updated_at": "2026-05-31 06:58",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -365,7 +365,7 @@
         {
           "id": "minimax/minimax-m2.7",
           "name": "MiniMax: MiniMax M2.7",
-          "input_price": 0.279,
+          "input_price": 0.26,
           "output_price": 1.2,
           "context_length": 204800,
           "is_free": false,
