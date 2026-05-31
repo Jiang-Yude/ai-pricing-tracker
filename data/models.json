@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-31 06:58",
+  "updated_at": "2026-06-01 07:01",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -277,18 +277,6 @@
           "description": "Mistral Medium 3.5 is a dense 128B instruction-following model from Mistral AI. It supports text and image inputs with text output, and is designed for agentic workflows, coding, and complex..."
         },
         {
-          "id": "mistralai/mistral-large-2411",
-          "name": "Mistral Large 2411",
-          "input_price": 2.0,
-          "output_price": 6.0,
-          "context_length": 131072,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/mistralai/mistral-large-2411",
-          "tier": "mid",
-          "omniscience_index": 1.8,
-          "description": "Mistral Large 2 2411 is an update of [Mistral Large 2](/mistralai/mistral-large) released together with [Pixtral Large 2411](/mistralai/pixtral-large-2411) It provides a significant upgrade on the previous [Mistral Large 24.07](/mistralai/mistral-large-2407), with notable..."
-        },
-        {
           "id": "mistralai/mistral-large-2407",
           "name": "Mistral Large 2407",
           "input_price": 2.0,
@@ -296,9 +284,21 @@
           "context_length": 131072,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/mistralai/mistral-large-2407",
-          "tier": "low",
+          "tier": "mid",
           "omniscience_index": 1.8,
           "description": "This is Mistral AI's flagship model, Mistral Large 2 (version mistral-large-2407). It's a proprietary weights-available model and excels at reasoning, code, JSON, chat, and more. Read the launch announcement [here](https://mistral.ai/news/mistral-large-2407/)...."
+        },
+        {
+          "id": "mistralai/mixtral-8x22b-instruct",
+          "name": "Mistral: Mixtral 8x22B Instruct",
+          "input_price": 2.0,
+          "output_price": 6.0,
+          "context_length": 65536,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/mistralai/mixtral-8x22b-instruct",
+          "tier": "low",
+          "omniscience_index": 1.8,
+          "description": "Mistral's official instruct fine-tuned version of [Mixtral 8x22B](/models/mistralai/mixtral-8x22b). It uses 39B active parameters out of 141B, offering unparalleled cost efficiency for its size. Its strengths include: - strong math, coding,..."
         }
       ]
     },
