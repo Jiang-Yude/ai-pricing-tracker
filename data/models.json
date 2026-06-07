@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-07 07:05",
+  "updated_at": "2026-06-08 07:06",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -420,7 +420,7 @@
         {
           "id": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
           "name": "NVIDIA: Llama 3.3 Nemotron Super 49B V1.5",
-          "input_price": 0.1,
+          "input_price": 0.4,
           "output_price": 0.4,
           "context_length": 131072,
           "is_free": false,
