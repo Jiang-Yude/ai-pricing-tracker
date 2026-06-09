@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-09 07:12",
+  "updated_at": "2026-06-10 07:17",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -15,7 +15,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/anthropic/claude-opus-4.7-fast",
           "tier": "high",
-          "omniscience_index": 27.4333333333333,
+          "omniscience_index": 40.15,
           "description": "Fast-mode variant of [Opus 4.7](/anthropic/claude-opus-4.7) - identical capabilities with higher output speed at premium 6x pricing.\n\nLearn more in Anthropic's docs: https://platform.claude.com/docs/en/build-with-claude/fast-mode"
         },
         {
@@ -27,7 +27,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/anthropic/claude-opus-4.6-fast",
           "tier": "mid",
-          "omniscience_index": 27.4333333333333,
+          "omniscience_index": 40.15,
           "description": "Fast-mode variant of [Opus 4.6](/anthropic/claude-opus-4.6) - identical capabilities with higher output speed at premium 6x pricing.\n\nLearn more in Anthropic's docs: https://platform.claude.com/docs/en/build-with-claude/fast-mode"
         },
         {
@@ -39,7 +39,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/anthropic/claude-opus-4.1",
           "tier": "low",
-          "omniscience_index": 27.4333333333333,
+          "omniscience_index": 40.15,
           "description": "Claude Opus 4.1 is an updated version of Anthropic’s flagship model, offering improved performance in coding, reasoning, and agentic tasks. It achieves 74.5% on SWE-bench Verified and shows notable gains..."
         }
       ]
@@ -70,7 +70,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/openai/gpt-5.5-pro",
           "tier": "mid",
-          "omniscience_index": 32.9333333333333,
+          "omniscience_index": 40.15,
           "description": "GPT-5.5 Pro is OpenAI’s high-capability model optimized for deep reasoning and accuracy on complex, high-stakes workloads. It features a 1M+ token context window (922K input, 128K output) with support for..."
         },
         {
@@ -82,7 +82,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/openai/gpt-5.4-pro",
           "tier": "low",
-          "omniscience_index": 32.9333333333333,
+          "omniscience_index": 40.15,
           "description": "GPT-5.4 Pro is OpenAI's most advanced model, building on GPT-5.4's unified architecture with enhanced reasoning capabilities for complex, high-stakes tasks. It features a 1M+ token context window (922K input, 128K..."
         }
       ]
@@ -199,7 +199,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-r1-0528",
           "tier": "mid",
-          "omniscience_index": 4.0,
+          "omniscience_index": 40.15,
           "description": "May 28th update to the [original DeepSeek R1](/deepseek/deepseek-r1) Performance on par with [OpenAI o1](/openai/o1), but open-sourced and with fully open reasoning tokens. It's 671B parameters in size, with 37B active..."
         },
         {
@@ -273,7 +273,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/mistralai/mistral-medium-3-5",
           "tier": "high",
-          "omniscience_index": 15.8,
+          "omniscience_index": 40.15,
           "description": "Mistral Medium 3.5 is a dense 128B instruction-following model from Mistral AI. It supports text and image inputs with text output, and is designed for agentic workflows, coding, and complex..."
         },
         {
@@ -375,16 +375,16 @@
           "description": "MiniMax-M3 is a multimodal foundation model from MiniMax. It supports text, image, and video inputs with text output, a 1M-token context window, and is suited for long-horizon agentic work, coding,..."
         },
         {
-          "id": "minimax/minimax-m2.7",
-          "name": "MiniMax: MiniMax M2.7",
-          "input_price": 0.279,
+          "id": "minimax/minimax-m2-her",
+          "name": "MiniMax: MiniMax M2-her",
+          "input_price": 0.3,
           "output_price": 1.2,
-          "context_length": 204800,
+          "context_length": 65536,
           "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/minimax/minimax-m2.7",
+          "openrouter_url": "https://openrouter.ai/models/minimax/minimax-m2-her",
           "tier": "low",
           "omniscience_index": 14.0833333333333,
-          "description": "MiniMax-M2.7 is a next-generation large language model designed for autonomous, real-world productivity and continuous improvement. Built to actively participate in its own evolution, M2.7 integrates advanced agentic capabilities through multi-agent..."
+          "description": "MiniMax M2-her is a dialogue-first large language model built for immersive roleplay, character-driven chat, and expressive multi-turn conversations. Designed to stay consistent in tone and personality, it supports rich message..."
         }
       ]
     },
@@ -402,7 +402,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3-ultra-550b-a55b",
           "tier": "high",
-          "omniscience_index": 15.8,
+          "omniscience_index": 40.15,
           "description": "NVIDIA Nemotron 3 Ultra is an open frontier-reasoning and orchestration model from NVIDIA, with 55B active parameters out of 550B total (MoE). Built on a hybrid Transformer-Mamba mixture-of-experts architecture, it..."
         },
         {
@@ -426,7 +426,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/nvidia/llama-3.3-nemotron-super-49b-v1.5",
           "tier": "low",
-          "omniscience_index": 15.8,
+          "omniscience_index": 40.15,
           "description": "Llama-3.3-Nemotron-Super-49B-v1.5 is a 49B-parameter, English-centric reasoning/chat model derived from Meta’s Llama-3.3-70B-Instruct with a 128K context. It’s post-trained for agentic workflows (RAG, tool calling) via SFT across math, code, science, and..."
         }
       ]
@@ -437,18 +437,6 @@
       "color": "#14B8A6",
       "models": [
         {
-          "id": "arcee-ai/maestro-reasoning",
-          "name": "Arcee AI: Maestro Reasoning",
-          "input_price": 0.9,
-          "output_price": 3.3,
-          "context_length": 131072,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/arcee-ai/maestro-reasoning",
-          "tier": "high",
-          "omniscience_index": 0.8,
-          "description": "Maestro Reasoning is Arcee's flagship analysis model: a 32 B‑parameter derivative of Qwen 2.5‑32 B tuned with DPO and chain‑of‑thought RL for step‑by‑step logic. Compared to the earlier 7 B..."
-        },
-        {
           "id": "arcee-ai/virtuoso-large",
           "name": "Arcee AI: Virtuoso Large",
           "input_price": 0.75,
@@ -456,7 +444,7 @@
           "context_length": 131072,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/arcee-ai/virtuoso-large",
-          "tier": "mid",
+          "tier": "high",
           "omniscience_index": 0.8,
           "description": "Virtuoso‑Large is Arcee's top‑tier general‑purpose LLM at 72 B parameters, tuned to tackle cross‑domain reasoning, creative writing and enterprise QA. Unlike many 70 B peers, it retains the 128 k..."
         },
@@ -468,9 +456,21 @@
           "context_length": 262144,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/arcee-ai/trinity-large-thinking",
-          "tier": "low",
+          "tier": "mid",
           "omniscience_index": 0.8,
           "description": "Trinity Large Thinking is a powerful open source reasoning model from the team at Arcee AI. It shows strong performance in PinchBench, agentic workloads, and reasoning tasks. Launch video: https://youtu.be/Gc82AXLa0Rg?si=4RLn6WBz33qT--B7..."
+        },
+        {
+          "id": "arcee-ai/coder-large",
+          "name": "Arcee AI: Coder Large",
+          "input_price": 0.5,
+          "output_price": 0.8,
+          "context_length": 32768,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/arcee-ai/coder-large",
+          "tier": "low",
+          "omniscience_index": 0.8,
+          "description": "Coder‑Large is a 32 B‑parameter offspring of Qwen 2.5‑Instruct that has been further trained on permissively‑licensed GitHub, CodeSearchNet and synthetic bug‑fix corpora. It supports a 32k context window, enabling multi‑file..."
         }
       ]
     },
@@ -500,7 +500,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/stepfun/step-3.5-flash",
           "tier": "mid",
-          "omniscience_index": 22.6833333333333,
+          "omniscience_index": 40.15,
           "description": "Step 3.5 Flash is StepFun's most capable open-source foundation model. Built on a sparse Mixture of Experts (MoE) architecture, it selectively activates only 11B of its 196B parameters per token...."
         }
       ]
