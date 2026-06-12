@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-12 07:23",
+  "updated_at": "2026-06-13 07:18",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -15,7 +15,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/anthropic/claude-opus-4.7-fast",
           "tier": "high",
-          "omniscience_index": 40.15,
+          "omniscience_index": 3.5,
           "description": "Fast-mode variant of [Opus 4.7](/anthropic/claude-opus-4.7) - identical capabilities with higher output speed at premium 6x pricing.\n\nLearn more in Anthropic's docs: https://platform.claude.com/docs/en/build-with-claude/fast-mode"
         },
         {
@@ -27,7 +27,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/anthropic/claude-opus-4.6-fast",
           "tier": "mid",
-          "omniscience_index": 40.15,
+          "omniscience_index": 3.5,
           "description": "Fast-mode variant of [Opus 4.6](/anthropic/claude-opus-4.6) - identical capabilities with higher output speed at premium 6x pricing.\n\nLearn more in Anthropic's docs: https://platform.claude.com/docs/en/build-with-claude/fast-mode"
         },
         {
@@ -39,7 +39,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/anthropic/claude-opus-4.1",
           "tier": "low",
-          "omniscience_index": 40.15,
+          "omniscience_index": 3.5,
           "description": "Claude Opus 4.1 is an updated version of Anthropic’s flagship model, offering improved performance in coding, reasoning, and agentic tasks. It achieves 74.5% on SWE-bench Verified and shows notable gains..."
         }
       ]
@@ -58,7 +58,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/openai/o1-pro",
           "tier": "high",
-          "omniscience_index": 32.9333333333333,
+          "omniscience_index": 3.0,
           "description": "The o1 series of models are trained with reinforcement learning to think before they answer and perform complex reasoning. The o1-pro model uses more compute to think harder and provide..."
         },
         {
@@ -70,7 +70,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/openai/gpt-5.5-pro",
           "tier": "mid",
-          "omniscience_index": 40.15,
+          "omniscience_index": 3.0,
           "description": "GPT-5.5 Pro is OpenAI’s high-capability model optimized for deep reasoning and accuracy on complex, high-stakes workloads. It features a 1M+ token context window (922K input, 128K output) with support for..."
         },
         {
@@ -82,7 +82,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/openai/gpt-5.4-pro",
           "tier": "low",
-          "omniscience_index": 40.15,
+          "omniscience_index": 3.0,
           "description": "GPT-5.4 Pro is OpenAI's most advanced model, building on GPT-5.4's unified architecture with enhanced reasoning capabilities for complex, high-stakes tasks. It features a 1M+ token context window (922K input, 128K..."
         }
       ]
@@ -101,7 +101,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/google/gemini-3.1-pro-preview-customtools",
           "tier": "high",
-          "omniscience_index": 32.9333333333333,
+          "omniscience_index": 3.2,
           "description": "Gemini 3.1 Pro Preview Custom Tools is a variant of Gemini 3.1 Pro that improves tool selection behavior by preventing overuse of a general bash tool when more efficient third-party..."
         },
         {
@@ -113,7 +113,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/google/gemini-3.1-pro-preview",
           "tier": "mid",
-          "omniscience_index": 32.9333333333333,
+          "omniscience_index": 3.2,
           "description": "Gemini 3.1 Pro Preview is Google’s frontier reasoning model, delivering enhanced software engineering performance, improved agentic reliability, and more efficient token usage across complex workflows. Building on the multimodal foundation..."
         },
         {
@@ -125,7 +125,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/google/gemini-3-pro-image-preview",
           "tier": "low",
-          "omniscience_index": 32.9333333333333,
+          "omniscience_index": 3.2,
           "description": "Nano Banana Pro is Google’s most advanced image-generation and editing model, built on Gemini 3 Pro. It extends the original Nano Banana with significantly improved multimodal reasoning, real-world grounding, and..."
         }
       ]
@@ -144,7 +144,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/x-ai/grok-4.20-multi-agent",
           "tier": "high",
-          "omniscience_index": 18.3166666666667,
+          "omniscience_index": 2.5,
           "description": "Grok 4.20 Multi-Agent is a variant of xAI’s Grok 4.20 designed for collaborative, agent-based workflows. Multiple agents operate in parallel to conduct deep research, coordinate tool use, and synthesize information..."
         },
         {
@@ -156,7 +156,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/x-ai/grok-4.3",
           "tier": "mid",
-          "omniscience_index": 18.3166666666667,
+          "omniscience_index": 2.5,
           "description": "Grok 4.3 is a reasoning model from xAI. It accepts text and image inputs with text output, and is suited for agentic workflows, instruction-following tasks, and applications requiring high factual..."
         },
         {
@@ -168,7 +168,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/x-ai/grok-4.20",
           "tier": "low",
-          "omniscience_index": 18.3166666666667,
+          "omniscience_index": 2.5,
           "description": "Grok 4.20 is a reasoning model from xAI with industry-leading speed and agentic tool calling capabilities. It combines the lowest hallucination rate on the market with strict prompt adherance, delivering..."
         }
       ]
@@ -199,7 +199,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-r1-0528",
           "tier": "mid",
-          "omniscience_index": 40.15,
+          "omniscience_index": 4.0,
           "description": "May 28th update to the [original DeepSeek R1](/deepseek/deepseek-r1) Performance on par with [OpenAI o1](/openai/o1), but open-sourced and with fully open reasoning tokens. It's 671B parameters in size, with 37B active..."
         },
         {
@@ -211,7 +211,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v3.1-terminus",
           "tier": "low",
-          "omniscience_index": 32.9333333333333,
+          "omniscience_index": 4.0,
           "description": "DeepSeek-V3.1 Terminus is an update to [DeepSeek V3.1](/deepseek/deepseek-chat-v3.1) that maintains the model's original capabilities while addressing issues reported by users, including language consistency and agent capabilities, further optimizing the model's..."
         }
       ]
@@ -230,7 +230,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/qwen/qwen3.6-max-preview",
           "tier": "high",
-          "omniscience_index": 32.9333333333333,
+          "omniscience_index": 2.2,
           "description": "Qwen3.6-Max-Preview is a proprietary frontier model from Alibaba Cloud built on a sparse mixture-of-experts architecture with approximately 1 trillion total parameters. It is optimized for agentic coding, tool use, and..."
         },
         {
@@ -242,7 +242,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/qwen/qwen3-max-thinking",
           "tier": "mid",
-          "omniscience_index": 15.8,
+          "omniscience_index": 2.2,
           "description": "Qwen3-Max-Thinking is the flagship reasoning model in the Qwen3 series, designed for high-stakes cognitive tasks that require deep, multi-step reasoning. By significantly scaling model capacity and reinforcement learning compute, it..."
         },
         {
@@ -254,7 +254,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/qwen/qwen3-max",
           "tier": "low",
-          "omniscience_index": 15.8,
+          "omniscience_index": 2.2,
           "description": "Qwen3-Max is an updated release built on the Qwen3 series, offering major improvements in reasoning, instruction following, multilingual support, and long-tail knowledge coverage compared to the January 2025 version. It..."
         }
       ]
@@ -273,7 +273,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/mistralai/mistral-medium-3-5",
           "tier": "high",
-          "omniscience_index": 40.15,
+          "omniscience_index": 1.8,
           "description": "Mistral Medium 3.5 is a dense 128B instruction-following model from Mistral AI. It supports text and image inputs with text output, and is designed for agentic workflows, coding, and complex..."
         },
         {
@@ -316,7 +316,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/meta-llama/llama-3-70b-instruct",
           "tier": "high",
-          "omniscience_index": 15.8,
+          "omniscience_index": 2.8,
           "description": "Meta's latest class of model (Llama 3) launched with a variety of sizes & flavors. This 70B instruct-tuned version was optimized for high quality dialogue usecases. It has demonstrated strong..."
         },
         {
@@ -340,7 +340,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/meta-llama/llama-3.1-70b-instruct",
           "tier": "low",
-          "omniscience_index": 32.9333333333333,
+          "omniscience_index": 2.8,
           "description": "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 70B instruct-tuned version is optimized for high quality dialogue usecases. It has demonstrated strong..."
         }
       ]
@@ -359,7 +359,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/minimax/minimax-m1",
           "tier": "high",
-          "omniscience_index": 14.0833333333333,
+          "omniscience_index": 1.2,
           "description": "MiniMax-M1 is a large-scale, open-weight reasoning model designed for extended context and high-efficiency inference. It leverages a hybrid Mixture-of-Experts (MoE) architecture paired with a custom \"lightning attention\" mechanism, allowing it..."
         },
         {
@@ -371,7 +371,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/minimax/minimax-m3",
           "tier": "mid",
-          "omniscience_index": 15.8,
+          "omniscience_index": 1.2,
           "description": "MiniMax-M3 is a multimodal foundation model from MiniMax. It supports text, image, and video inputs with text output, a 1M-token context window, and is suited for long-horizon agentic work, coding,..."
         },
         {
@@ -383,7 +383,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/minimax/minimax-m2-her",
           "tier": "low",
-          "omniscience_index": 14.0833333333333,
+          "omniscience_index": 1.2,
           "description": "MiniMax M2-her is a dialogue-first large language model built for immersive roleplay, character-driven chat, and expressive multi-turn conversations. Designed to stay consistent in tone and personality, it supports rich message..."
         }
       ]
@@ -402,7 +402,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3-ultra-550b-a55b",
           "tier": "high",
-          "omniscience_index": 40.15,
+          "omniscience_index": 1.5,
           "description": "NVIDIA Nemotron 3 Ultra is an open frontier-reasoning and orchestration model from NVIDIA, with 55B active parameters out of 550B total (MoE). Built on a hybrid Transformer-Mamba mixture-of-experts architecture, it..."
         },
         {
@@ -414,7 +414,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3-super-120b-a12b",
           "tier": "mid",
-          "omniscience_index": 15.8,
+          "omniscience_index": 1.5,
           "description": "NVIDIA Nemotron 3 Super is a 120B-parameter open hybrid MoE model, activating just 12B parameters for maximum compute efficiency and accuracy in complex multi-agent applications. Built on a hybrid Mamba-Transformer..."
         },
         {
@@ -426,7 +426,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/nvidia/llama-3.3-nemotron-super-49b-v1.5",
           "tier": "low",
-          "omniscience_index": 40.15,
+          "omniscience_index": 1.5,
           "description": "Llama-3.3-Nemotron-Super-49B-v1.5 is a 49B-parameter, English-centric reasoning/chat model derived from Meta’s Llama-3.3-70B-Instruct with a 128K context. It’s post-trained for agentic workflows (RAG, tool calling) via SFT across math, code, science, and..."
         }
       ]
@@ -488,7 +488,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/stepfun/step-3.7-flash",
           "tier": "high",
-          "omniscience_index": 22.6833333333333,
+          "omniscience_index": 0.6,
           "description": "Step 3.7 Flash is StepFun's latest high-efficiency multimodal Mixture-of-Experts model. It pairs a 196B-parameter language backbone with a vision encoder for native image and video understanding, activating roughly 11B parameters..."
         },
         {
@@ -500,7 +500,7 @@
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/stepfun/step-3.5-flash",
           "tier": "mid",
-          "omniscience_index": 40.15,
+          "omniscience_index": 0.6,
           "description": "Step 3.5 Flash is StepFun's most capable open-source foundation model. Built on a sparse Mixture of Experts (MoE) architecture, it selectively activates only 11B of its 196B parameters per token...."
         }
       ]
@@ -515,7 +515,7 @@
       "context_length": 131072,
       "is_free": true,
       "openrouter_url": "https://openrouter.ai/models/meta-llama/llama-3.3-70b-instruct:free",
-      "omniscience_index": 12.64,
+      "omniscience_index": 2.2399999999999998,
       "description": "The Meta Llama 3.3 multilingual large language model (LLM) is a pretrained and instruction tuned generative model in 70B (text in/text out). The Llama 3.3 instruction tuned text only model..."
     },
     {
@@ -526,7 +526,7 @@
       "context_length": 1000000,
       "is_free": true,
       "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3-super-120b-a12b:free",
-      "omniscience_index": 12.64,
+      "omniscience_index": 1.2000000000000002,
       "description": "NVIDIA Nemotron 3 Super is a 120B-parameter open hybrid MoE model, activating just 12B parameters for maximum compute efficiency and accuracy in complex multi-agent applications. Built on a hybrid Mamba-Transformer..."
     },
     {
@@ -537,7 +537,7 @@
       "context_length": 1048576,
       "is_free": true,
       "openrouter_url": "https://openrouter.ai/models/qwen/qwen3-coder:free",
-      "omniscience_index": 12.64,
+      "omniscience_index": 1.7600000000000002,
       "description": "Qwen3-Coder-480B-A35B-Instruct is a Mixture-of-Experts (MoE) code generation model developed by the Qwen team. It is optimized for agentic coding tasks such as function calling, tool use, and long-context reasoning over..."
     },
     {
@@ -548,7 +548,7 @@
       "context_length": 256000,
       "is_free": true,
       "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3-nano-30b-a3b:free",
-      "omniscience_index": 12.64,
+      "omniscience_index": 1.2000000000000002,
       "description": "NVIDIA Nemotron 3 Nano 30B A3B is a small language MoE model with highest compute efficiency and accuracy for developers to build specialized agentic AI systems. The model is fully..."
     },
     {
