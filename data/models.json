@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-18 07:26",
+  "updated_at": "2026-06-19 07:46",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -93,6 +93,18 @@
       "color": "#3B82F6",
       "models": [
         {
+          "id": "google/gemini-3-pro-image",
+          "name": "Google: Nano Banana Pro (Gemini 3 Pro Image)",
+          "input_price": 2.0,
+          "output_price": 12.0,
+          "context_length": 65536,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/google/gemini-3-pro-image",
+          "tier": "high",
+          "omniscience_index": 3.2,
+          "description": "Nano Banana Pro is Google’s most advanced image-generation and editing model, built on Gemini 3 Pro. It extends the original Nano Banana with significantly improved multimodal reasoning, real-world grounding, and..."
+        },
+        {
           "id": "google/gemini-3.1-pro-preview-customtools",
           "name": "Google: Gemini 3.1 Pro Preview Custom Tools",
           "input_price": 2.0,
@@ -100,7 +112,7 @@
           "context_length": 1048756,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/google/gemini-3.1-pro-preview-customtools",
-          "tier": "high",
+          "tier": "mid",
           "omniscience_index": 3.2,
           "description": "Gemini 3.1 Pro Preview Custom Tools is a variant of Gemini 3.1 Pro that improves tool selection behavior by preventing overuse of a general bash tool when more efficient third-party..."
         },
@@ -112,21 +124,9 @@
           "context_length": 1048576,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/google/gemini-3.1-pro-preview",
-          "tier": "mid",
-          "omniscience_index": 3.2,
-          "description": "Gemini 3.1 Pro Preview is Google’s frontier reasoning model, delivering enhanced software engineering performance, improved agentic reliability, and more efficient token usage across complex workflows. Building on the multimodal foundation..."
-        },
-        {
-          "id": "google/gemini-3-pro-image-preview",
-          "name": "Google: Nano Banana Pro (Gemini 3 Pro Image Preview)",
-          "input_price": 2.0,
-          "output_price": 12.0,
-          "context_length": 65536,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/google/gemini-3-pro-image-preview",
           "tier": "low",
           "omniscience_index": 3.2,
-          "description": "Nano Banana Pro is Google’s most advanced image-generation and editing model, built on Gemini 3 Pro. It extends the original Nano Banana with significantly improved multimodal reasoning, real-world grounding, and..."
+          "description": "Gemini 3.1 Pro Preview is Google’s frontier reasoning model, delivering enhanced software engineering performance, improved agentic reliability, and more efficient token usage across complex workflows. Building on the multimodal foundation..."
         }
       ]
     },
