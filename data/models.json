@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-20 06:59",
+  "updated_at": "2026-06-21 07:10",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -451,8 +451,8 @@
         {
           "id": "arcee-ai/trinity-large-thinking",
           "name": "Arcee AI: Trinity Large Thinking",
-          "input_price": 0.22,
-          "output_price": 0.85,
+          "input_price": 0.25,
+          "output_price": 0.8,
           "context_length": 262144,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/arcee-ai/trinity-large-thinking",
