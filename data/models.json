@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-24 07:09",
+  "updated_at": "2026-06-25 07:04",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -97,7 +97,7 @@
           "name": "Google: Nano Banana Pro (Gemini 3 Pro Image)",
           "input_price": 2.0,
           "output_price": 12.0,
-          "context_length": 131072,
+          "context_length": 65536,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/google/gemini-3-pro-image",
           "tier": "high",
