@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-04 07:05",
+  "updated_at": "2026-07-05 06:58",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -408,8 +408,8 @@
         {
           "id": "nvidia/nemotron-3-super-120b-a12b",
           "name": "NVIDIA: Nemotron 3 Super",
-          "input_price": 0.085,
-          "output_price": 0.4,
+          "input_price": 0.08,
+          "output_price": 0.45,
           "context_length": 1000000,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3-super-120b-a12b",
