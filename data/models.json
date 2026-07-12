@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-12 06:50",
+  "updated_at": "2026-07-13 06:50",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -310,8 +310,8 @@
         {
           "id": "meta-llama/llama-4-maverick",
           "name": "Meta: Llama 4 Maverick",
-          "input_price": 0.15,
-          "output_price": 0.6,
+          "input_price": 0.2,
+          "output_price": 0.8,
           "context_length": 1048576,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/meta-llama/llama-4-maverick",
