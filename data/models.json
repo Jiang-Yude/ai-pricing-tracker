@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-13 06:50",
+  "updated_at": "2026-07-14 06:56",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -550,17 +550,6 @@
       "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3-nano-30b-a3b:free",
       "omniscience_index": 1.2000000000000002,
       "description": "NVIDIA Nemotron 3 Nano 30B A3B is a small language MoE model with highest compute efficiency and accuracy for developers to build specialized agentic AI systems. The model is fully..."
-    },
-    {
-      "id": "openai/gpt-oss-120b:free",
-      "name": "OpenAI: gpt-oss-120b (free)",
-      "input_price": 0.0,
-      "output_price": 0.0,
-      "context_length": 131072,
-      "is_free": true,
-      "openrouter_url": "https://openrouter.ai/models/openai/gpt-oss-120b:free",
-      "omniscience_index": 2.4000000000000004,
-      "description": "gpt-oss-120b is an open-weight, 117B-parameter Mixture-of-Experts (MoE) language model from OpenAI designed for high-reasoning, agentic, and general-purpose production use cases. It activates 5.1B parameters per forward pass and is optimized..."
     }
   ]
 }
