@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-17 06:57",
+  "updated_at": "2026-07-18 06:51",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -375,16 +375,16 @@
           "description": "MiniMax-M3 is a multimodal foundation model from MiniMax. It supports text, image, and video inputs with text output, a 1M-token context window, and is suited for long-horizon agentic work, coding,..."
         },
         {
-          "id": "minimax/minimax-m2.7",
-          "name": "MiniMax: MiniMax M2.7",
+          "id": "minimax/minimax-m2-her",
+          "name": "MiniMax: MiniMax M2-her",
           "input_price": 0.3,
           "output_price": 1.2,
-          "context_length": 204800,
+          "context_length": 65536,
           "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/minimax/minimax-m2.7",
+          "openrouter_url": "https://openrouter.ai/models/minimax/minimax-m2-her",
           "tier": "low",
           "omniscience_index": 1.2,
-          "description": "MiniMax-M2.7 is a next-generation large language model designed for autonomous, real-world productivity and continuous improvement. Built to actively participate in its own evolution, M2.7 integrates advanced agentic capabilities through multi-agent..."
+          "description": "MiniMax M2-her is a dialogue-first large language model built for immersive roleplay, character-driven chat, and expressive multi-turn conversations. Designed to stay consistent in tone and personality, it supports rich message..."
         }
       ]
     },
@@ -418,16 +418,16 @@
           "description": "NVIDIA Nemotron 3 Super is a 120B-parameter open hybrid MoE model, activating just 12B parameters for maximum compute efficiency and accuracy in complex multi-agent applications. Built on a hybrid Mamba-Transformer..."
         },
         {
-          "id": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
-          "name": "NVIDIA: Llama 3.3 Nemotron Super 49B V1.5",
-          "input_price": 0.4,
-          "output_price": 0.4,
-          "context_length": 131072,
+          "id": "nvidia/nemotron-3-nano-30b-a3b",
+          "name": "NVIDIA: Nemotron 3 Nano 30B A3B",
+          "input_price": 0.05,
+          "output_price": 0.2,
+          "context_length": 262144,
           "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/nvidia/llama-3.3-nemotron-super-49b-v1.5",
+          "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3-nano-30b-a3b",
           "tier": "low",
           "omniscience_index": 1.5,
-          "description": "Llama-3.3-Nemotron-Super-49B-v1.5 is a 49B-parameter, English-centric reasoning/chat model derived from Meta’s Llama-3.3-70B-Instruct with a 128K context. It’s post-trained for agentic workflows (RAG, tool calling) via SFT across math, code, science, and..."
+          "description": "NVIDIA Nemotron 3 Nano 30B A3B is a small language MoE model with highest compute efficiency and accuracy for developers to build specialized agentic AI systems. The model is fully..."
         }
       ]
     },
