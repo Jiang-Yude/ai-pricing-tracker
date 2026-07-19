@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-19 06:51",
+  "updated_at": "2026-07-20 06:53",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -408,8 +408,8 @@
         {
           "id": "nvidia/nemotron-3-super-120b-a12b",
           "name": "NVIDIA: Nemotron 3 Super",
-          "input_price": 0.21,
-          "output_price": 0.455,
+          "input_price": 0.085,
+          "output_price": 0.4,
           "context_length": 1000000,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3-super-120b-a12b",
@@ -496,17 +496,6 @@
   ],
   "free_models": [
     {
-      "id": "meta-llama/llama-3.3-70b-instruct:free",
-      "name": "Meta: Llama 3.3 70B Instruct (free)",
-      "input_price": 0.0,
-      "output_price": 0.0,
-      "context_length": 131072,
-      "is_free": true,
-      "openrouter_url": "https://openrouter.ai/models/meta-llama/llama-3.3-70b-instruct:free",
-      "omniscience_index": 2.2399999999999998,
-      "description": "The Meta Llama 3.3 multilingual large language model (LLM) is a pretrained and instruction tuned generative model in 70B (text in/text out). The Llama 3.3 instruction tuned text only model..."
-    },
-    {
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
       "name": "NVIDIA: Nemotron 3 Super (free)",
       "input_price": 0.0,
@@ -516,17 +505,6 @@
       "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3-super-120b-a12b:free",
       "omniscience_index": 1.2000000000000002,
       "description": "NVIDIA Nemotron 3 Super is a 120B-parameter open hybrid MoE model, activating just 12B parameters for maximum compute efficiency and accuracy in complex multi-agent applications. Built on a hybrid Mamba-Transformer..."
-    },
-    {
-      "id": "qwen/qwen3-coder:free",
-      "name": "Qwen: Qwen3 Coder 480B A35B (free)",
-      "input_price": 0.0,
-      "output_price": 0.0,
-      "context_length": 1048576,
-      "is_free": true,
-      "openrouter_url": "https://openrouter.ai/models/qwen/qwen3-coder:free",
-      "omniscience_index": 1.7600000000000002,
-      "description": "Qwen3-Coder-480B-A35B-Instruct is a Mixture-of-Experts (MoE) code generation model developed by the Qwen team. It is optimized for agentic coding tasks such as function calling, tool use, and long-context reasoning over..."
     },
     {
       "id": "nvidia/nemotron-3-nano-30b-a3b:free",
