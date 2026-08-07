@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-06 06:59",
+  "updated_at": "2026-08-07 09:29",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -62,6 +62,18 @@
           "description": "The o1 series of models are trained with reinforcement learning to think before they answer and perform complex reasoning. The o1-pro model uses more compute to think harder and provide..."
         },
         {
+          "id": "openai/o1-pro:batch",
+          "name": "OpenAI: o1-pro (batch)",
+          "input_price": 75.0,
+          "output_price": 300.0,
+          "context_length": 200000,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/openai/o1-pro:batch",
+          "tier": "mid",
+          "omniscience_index": 3.0,
+          "description": "The o1 series of models are trained with reinforcement learning to think before they answer and perform complex reasoning. The o1-pro model uses more compute to think harder and provide..."
+        },
+        {
           "id": "openai/gpt-5.5-pro",
           "name": "OpenAI: GPT-5.5 Pro",
           "input_price": 30.0,
@@ -69,21 +81,9 @@
           "context_length": 1050000,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/openai/gpt-5.5-pro",
-          "tier": "mid",
-          "omniscience_index": 3.0,
-          "description": "GPT-5.5 Pro is OpenAI’s high-capability model optimized for deep reasoning and accuracy on complex, high-stakes workloads. It features a 1M+ token context window (922K input, 128K output) with support for..."
-        },
-        {
-          "id": "openai/gpt-5.4-pro",
-          "name": "OpenAI: GPT-5.4 Pro",
-          "input_price": 30.0,
-          "output_price": 180.0,
-          "context_length": 1050000,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/openai/gpt-5.4-pro",
           "tier": "low",
           "omniscience_index": 3.0,
-          "description": "GPT-5.4 Pro is OpenAI's most advanced model, building on GPT-5.4's unified architecture with enhanced reasoning capabilities for complex, high-stakes tasks. It features a 1M+ token context window (922K input, 128K..."
+          "description": "GPT-5.5 Pro is OpenAI’s high-capability model optimized for deep reasoning and accuracy on complex, high-stakes workloads. It features a 1M+ token context window (922K input, 128K output) with support for..."
         }
       ]
     },
@@ -406,28 +406,28 @@
           "description": "NVIDIA Nemotron 3 Ultra is an open frontier-reasoning and orchestration model from NVIDIA, with 55B active parameters out of 550B total (MoE). Built on a hybrid Transformer-Mamba mixture-of-experts architecture, it..."
         },
         {
+          "id": "nvidia/nemotron-3-ultra-550b-a55b:batch",
+          "name": "NVIDIA: Nemotron 3 Ultra (batch)",
+          "input_price": 0.3,
+          "output_price": 1.8,
+          "context_length": 512288,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3-ultra-550b-a55b:batch",
+          "tier": "mid",
+          "omniscience_index": 1.5,
+          "description": "NVIDIA Nemotron 3 Ultra is an open frontier-reasoning and orchestration model from NVIDIA, with 55B active parameters out of 550B total (MoE). Built on a hybrid Transformer-Mamba mixture-of-experts architecture, it..."
+        },
+        {
           "id": "nvidia/nemotron-3-super-120b-a12b",
           "name": "NVIDIA: Nemotron 3 Super",
-          "input_price": 0.085,
-          "output_price": 0.4,
+          "input_price": 0.3,
+          "output_price": 0.9,
           "context_length": 1000000,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3-super-120b-a12b",
-          "tier": "mid",
-          "omniscience_index": 1.5,
-          "description": "NVIDIA Nemotron 3 Super is a 120B-parameter open hybrid MoE model, activating just 12B parameters for maximum compute efficiency and accuracy in complex multi-agent applications. Built on a hybrid Mamba-Transformer..."
-        },
-        {
-          "id": "nvidia/nemotron-3-nano-30b-a3b",
-          "name": "NVIDIA: Nemotron 3 Nano 30B A3B",
-          "input_price": 0.05,
-          "output_price": 0.2,
-          "context_length": 262144,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3-nano-30b-a3b",
           "tier": "low",
           "omniscience_index": 1.5,
-          "description": "NVIDIA Nemotron 3 Nano 30B A3B is a small language MoE model with highest compute efficiency and accuracy for developers to build specialized agentic AI systems. The model is fully..."
+          "description": "NVIDIA Nemotron 3 Super is a 120B-parameter open hybrid MoE model, activating just 12B parameters for maximum compute efficiency and accuracy in complex multi-agent applications. Built on a hybrid Mamba-Transformer..."
         }
       ]
     },
