@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-12 06:42",
+  "updated_at": "2026-08-13 06:41",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -136,6 +136,18 @@
       "color": "#8B5CF6",
       "models": [
         {
+          "id": "x-ai/grok-4.6",
+          "name": "SpaceXAI: Grok 4.6",
+          "input_price": 2.0,
+          "output_price": 6.0,
+          "context_length": 500000,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/x-ai/grok-4.6",
+          "tier": "high",
+          "omniscience_index": 2.5,
+          "description": "Grok 4.6 is SpaceXAI's smartest model with frontier performance on coding, knowledge work, and STEM."
+        },
+        {
           "id": "x-ai/grok-4.5",
           "name": "SpaceXAI: Grok 4.5",
           "input_price": 2.0,
@@ -143,9 +155,9 @@
           "context_length": 500000,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/x-ai/grok-4.5",
-          "tier": "high",
+          "tier": "mid",
           "omniscience_index": 2.5,
-          "description": "Grok 4.5 is SpaceXAI's smartest model with frontier performance on coding, knowledge work, and STEM."
+          "description": "Grok 4.5 is a model from SpaceXAI with frontier performance on coding, knowledge work, and STEM."
         },
         {
           "id": "x-ai/grok-4.3",
@@ -155,21 +167,9 @@
           "context_length": 1000000,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/x-ai/grok-4.3",
-          "tier": "mid",
-          "omniscience_index": 2.5,
-          "description": "Grok 4.3 is a reasoning model from SpaceXAI. It accepts text and image inputs with text output, and is suited for agentic workflows, instruction-following tasks, and applications requiring high factual..."
-        },
-        {
-          "id": "x-ai/grok-4.20-multi-agent",
-          "name": "SpaceXAI: Grok 4.20 Multi-Agent",
-          "input_price": 1.25,
-          "output_price": 2.5,
-          "context_length": 2000000,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/x-ai/grok-4.20-multi-agent",
           "tier": "low",
           "omniscience_index": 2.5,
-          "description": "Grok 4.20 Multi-Agent is a variant of SpaceXAI’s Grok 4.20 designed for collaborative, agent-based workflows. Multiple agents operate in parallel to conduct deep research, coordinate tool use, and synthesize information..."
+          "description": "Grok 4.3 is a reasoning model from SpaceXAI. It accepts text and image inputs with text output, and is suited for agentic workflows, instruction-following tasks, and applications requiring high factual..."
         }
       ]
     },
@@ -191,6 +191,18 @@
           "description": "DeepSeek R1 is here: Performance on par with [OpenAI o1](/openai/o1), but open-sourced and with fully open reasoning tokens. It's 671B parameters in size, with 37B active in an inference pass...."
         },
         {
+          "id": "deepseek/deepseek-v4-pro",
+          "name": "DeepSeek: DeepSeek V4 Pro",
+          "input_price": 1.168,
+          "output_price": 2.336,
+          "context_length": 1048576,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro",
+          "tier": "mid",
+          "omniscience_index": 4.0,
+          "description": "DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reasoning, coding,..."
+        },
+        {
           "id": "deepseek/deepseek-r1-0528",
           "name": "DeepSeek: R1 0528",
           "input_price": 0.5,
@@ -198,21 +210,9 @@
           "context_length": 163840,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-r1-0528",
-          "tier": "mid",
-          "omniscience_index": 4.0,
-          "description": "May 28th update to the [original DeepSeek R1](/deepseek/deepseek-r1) Performance on par with [OpenAI o1](/openai/o1), but open-sourced and with fully open reasoning tokens. It's 671B parameters in size, with 37B active..."
-        },
-        {
-          "id": "deepseek/deepseek-v4-pro",
-          "name": "DeepSeek: DeepSeek V4 Pro",
-          "input_price": 0.6317,
-          "output_price": 1.2634,
-          "context_length": 1048576,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro",
           "tier": "low",
           "omniscience_index": 4.0,
-          "description": "DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reasoning, coding,..."
+          "description": "May 28th update to the [original DeepSeek R1](/deepseek/deepseek-r1) Performance on par with [OpenAI o1](/openai/o1), but open-sourced and with fully open reasoning tokens. It's 671B parameters in size, with 37B active..."
         }
       ]
     },
@@ -234,6 +234,18 @@
           "description": "Qwen3.6-Max-Preview is a proprietary frontier model from Alibaba Cloud built on a sparse mixture-of-experts architecture with approximately 1 trillion total parameters. It is optimized for agentic coding, tool use, and..."
         },
         {
+          "id": "qwen/qwen3.8-2.4t-a95b",
+          "name": "Qwen: Qwen3.8 2.4T A95B",
+          "input_price": 2.0,
+          "output_price": 6.0,
+          "context_length": 262144,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/qwen/qwen3.8-2.4t-a95b",
+          "tier": "mid",
+          "omniscience_index": 2.2,
+          "description": "Qwen3.8 2.4T A95B is an open-weight sparse mixture-of-experts model from Qwen and the open-weight variant of [Qwen3.8 Max](/qwen/qwen3.8-max), with 95 billion active parameters out of 2.4 trillion total. It is..."
+        },
+        {
           "id": "qwen/qwen3.8-max",
           "name": "Qwen: Qwen3.8 Max",
           "input_price": 2.0,
@@ -241,21 +253,9 @@
           "context_length": 1000000,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/qwen/qwen3.8-max",
-          "tier": "mid",
-          "omniscience_index": 2.2,
-          "description": "Qwen3.8 Max is the flagship model in Alibaba's Qwen3.8 series, the general-availability successor to the Qwen3.8 Max Preview. It is a multimodal reasoning model intended for complex reasoning, visual understanding,..."
-        },
-        {
-          "id": "qwen/qwen3.7-max",
-          "name": "Qwen: Qwen3.7 Max",
-          "input_price": 1.475,
-          "output_price": 4.425,
-          "context_length": 1000000,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/qwen/qwen3.7-max",
           "tier": "low",
           "omniscience_index": 2.2,
-          "description": "Qwen3.7-Max is the flagship model in Alibaba's Qwen3.7 series. It supports text input and output and is designed for agent-centric workloads, with particular strengths in coding, office and productivity tasks,..."
+          "description": "Qwen3.8 Max is the flagship model in Alibaba's Qwen3.8 series, the general-availability successor to the Qwen3.8 Max Preview. It is a multimodal reasoning model intended for complex reasoning, visual understanding,..."
         }
       ]
     },
