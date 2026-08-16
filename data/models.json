@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-16 06:22",
+  "updated_at": "2026-08-17 06:21",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -192,7 +192,7 @@
         },
         {
           "id": "deepseek/deepseek-v4-pro",
-          "name": "DeepSeek: DeepSeek V4 Pro",
+          "name": "DeepSeek: DeepSeek V4 Pro 0423",
           "input_price": 1.168,
           "output_price": 2.336,
           "context_length": 1048576,
