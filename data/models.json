@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-18 06:25",
+  "updated_at": "2026-08-19 06:24",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -375,16 +375,16 @@
           "description": "MiniMax-M3 is a multimodal foundation model from MiniMax. It supports text, image, and video inputs with text output, a 1M-token context window, and is suited for long-horizon agentic work, coding,..."
         },
         {
-          "id": "minimax/minimax-m2.7",
-          "name": "MiniMax: MiniMax M2.7",
+          "id": "minimax/minimax-m3:batch",
+          "name": "MiniMax: MiniMax M3 (batch)",
           "input_price": 0.3,
           "output_price": 1.2,
-          "context_length": 204800,
+          "context_length": 524288,
           "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/minimax/minimax-m2.7",
+          "openrouter_url": "https://openrouter.ai/models/minimax/minimax-m3:batch",
           "tier": "low",
           "omniscience_index": 1.2,
-          "description": "MiniMax-M2.7 is a next-generation large language model designed for autonomous, real-world productivity and continuous improvement. Built to actively participate in its own evolution, M2.7 integrates advanced agentic capabilities through multi-agent..."
+          "description": "MiniMax-M3 is a multimodal foundation model from MiniMax. It supports text, image, and video inputs with text output, a 1M-token context window, and is suited for long-horizon agentic work, coding,..."
         }
       ]
     },
@@ -408,8 +408,8 @@
         {
           "id": "nvidia/nemotron-3-ultra-550b-a55b:batch",
           "name": "NVIDIA: Nemotron 3 Ultra (batch)",
-          "input_price": 0.3,
-          "output_price": 1.8,
+          "input_price": 0.6,
+          "output_price": 3.6,
           "context_length": 512288,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3-ultra-550b-a55b:batch",
