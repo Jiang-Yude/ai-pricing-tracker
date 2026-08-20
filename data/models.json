@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-20 06:25",
+  "updated_at": "2026-08-21 06:28",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -179,14 +179,26 @@
       "color": "#EF4444",
       "models": [
         {
+          "id": "deepseek/deepseek-v4-pro-0813",
+          "name": "DeepSeek: DeepSeek V4 Pro 0813",
+          "input_price": 1.188,
+          "output_price": 3.564,
+          "context_length": 1048576,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro-0813",
+          "tier": "high",
+          "omniscience_index": 4.0,
+          "description": "DeepSeek V4 Pro 0813 is a large-scale mixture-of-experts model from DeepSeek. This is the GA release of DeepSeek V4 Pro."
+        },
+        {
           "id": "deepseek/deepseek-v4-pro",
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
-          "input_price": 1.44,
-          "output_price": 2.88,
+          "input_price": 1.6,
+          "output_price": 3.2,
           "context_length": 1048576,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro",
-          "tier": "high",
+          "tier": "mid",
           "omniscience_index": 4.0,
           "description": "DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reasoning, coding,..."
         },
@@ -198,21 +210,9 @@
           "context_length": 64000,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-r1",
-          "tier": "mid",
-          "omniscience_index": 4.0,
-          "description": "DeepSeek R1 is here: Performance on par with [OpenAI o1](/openai/o1), but open-sourced and with fully open reasoning tokens. It's 671B parameters in size, with 37B active in an inference pass...."
-        },
-        {
-          "id": "deepseek/deepseek-r1-0528",
-          "name": "DeepSeek: R1 0528",
-          "input_price": 0.5,
-          "output_price": 2.15,
-          "context_length": 163840,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-r1-0528",
           "tier": "low",
           "omniscience_index": 4.0,
-          "description": "May 28th update to the [original DeepSeek R1](/deepseek/deepseek-r1) Performance on par with [OpenAI o1](/openai/o1), but open-sourced and with fully open reasoning tokens. It's 671B parameters in size, with 37B active..."
+          "description": "DeepSeek R1 is here: Performance on par with [OpenAI o1](/openai/o1), but open-sourced and with fully open reasoning tokens. It's 671B parameters in size, with 37B active in an inference pass...."
         }
       ]
     },
