@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24 06:22",
+  "updated_at": "2026-08-25 06:26",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -505,17 +505,6 @@
       "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3-super-120b-a12b:free",
       "omniscience_index": 1.2000000000000002,
       "description": "NVIDIA Nemotron 3 Super is a 120B-parameter open hybrid MoE model, activating just 12B parameters for maximum compute efficiency and accuracy in complex multi-agent applications. Built on a hybrid Mamba-Transformer..."
-    },
-    {
-      "id": "nvidia/nemotron-3-nano-30b-a3b:free",
-      "name": "NVIDIA: Nemotron 3 Nano 30B A3B (free)",
-      "input_price": 0.0,
-      "output_price": 0.0,
-      "context_length": 256000,
-      "is_free": true,
-      "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3-nano-30b-a3b:free",
-      "omniscience_index": 1.2000000000000002,
-      "description": "NVIDIA Nemotron 3 Nano 30B A3B is a small language MoE model with highest compute efficiency and accuracy for developers to build specialized agentic AI systems. The model is fully..."
     }
   ]
 }
