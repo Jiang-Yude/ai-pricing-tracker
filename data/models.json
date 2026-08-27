@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-26 06:28",
+  "updated_at": "2026-08-27 10:58",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -320,6 +320,18 @@
           "description": "Llama 4 Maverick 17B Instruct (128E) is a high-capacity multimodal language model from Meta, built on a mixture-of-experts (MoE) architecture with 128 experts and 17 billion active parameters per forward..."
         },
         {
+          "id": "meta-llama/llama-3.3-70b-instruct",
+          "name": "Meta: Llama 3.3 70B Instruct",
+          "input_price": 0.71,
+          "output_price": 0.71,
+          "context_length": 131072,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/meta-llama/llama-3.3-70b-instruct",
+          "tier": "mid",
+          "omniscience_index": 2.8,
+          "description": "The Meta Llama 3.3 multilingual large language model (LLM) is a pretrained and instruction tuned generative model in 70B (text in/text out). The Llama 3.3 instruction tuned text only model..."
+        },
+        {
           "id": "meta-llama/llama-3.1-70b-instruct",
           "name": "Meta: Llama 3.1 70B Instruct",
           "input_price": 0.4,
@@ -327,21 +339,9 @@
           "context_length": 131072,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/meta-llama/llama-3.1-70b-instruct",
-          "tier": "mid",
-          "omniscience_index": 2.8,
-          "description": "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 70B instruct-tuned version is optimized for high quality dialogue usecases. It has demonstrated strong..."
-        },
-        {
-          "id": "meta-llama/llama-3.2-3b-instruct",
-          "name": "Meta: Llama 3.2 3B Instruct",
-          "input_price": 0.05,
-          "output_price": 0.33,
-          "context_length": 131072,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/meta-llama/llama-3.2-3b-instruct",
           "tier": "low",
           "omniscience_index": 2.8,
-          "description": "Llama 3.2 3B is a 3-billion-parameter multilingual large language model, optimized for advanced natural language processing tasks like dialogue generation, reasoning, and summarization. Designed with the latest transformer architecture, it..."
+          "description": "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 70B instruct-tuned version is optimized for high quality dialogue usecases. It has demonstrated strong..."
         }
       ]
     },
