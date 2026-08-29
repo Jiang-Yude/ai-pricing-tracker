@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-28 13:59",
+  "updated_at": "2026-08-29 11:32",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -179,6 +179,18 @@
       "color": "#EF4444",
       "models": [
         {
+          "id": "deepseek/deepseek-v4-pro-0813:batch",
+          "name": "DeepSeek: DeepSeek V4 Pro 0813 (batch)",
+          "input_price": 1.32,
+          "output_price": 3.96,
+          "context_length": 1048576,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro-0813:batch",
+          "tier": "high",
+          "omniscience_index": 4.0,
+          "description": "DeepSeek V4 Pro 0813 is a large-scale mixture-of-experts model from DeepSeek. This is the GA release of DeepSeek V4 Pro."
+        },
+        {
           "id": "deepseek/deepseek-r1",
           "name": "DeepSeek: R1",
           "input_price": 0.7,
@@ -186,7 +198,7 @@
           "context_length": 64000,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-r1",
-          "tier": "high",
+          "tier": "mid",
           "omniscience_index": 4.0,
           "description": "DeepSeek R1 is here: Performance on par with [OpenAI o1](/openai/o1), but open-sourced and with fully open reasoning tokens. It's 671B parameters in size, with 37B active in an inference pass...."
         },
@@ -198,21 +210,9 @@
           "context_length": 163840,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-r1-0528",
-          "tier": "mid",
-          "omniscience_index": 4.0,
-          "description": "May 28th update to the [original DeepSeek R1](/deepseek/deepseek-r1) Performance on par with [OpenAI o1](/openai/o1), but open-sourced and with fully open reasoning tokens. It's 671B parameters in size, with 37B active..."
-        },
-        {
-          "id": "deepseek/deepseek-v4-pro-0813",
-          "name": "DeepSeek: DeepSeek V4 Pro 0813",
-          "input_price": 0.66,
-          "output_price": 1.98,
-          "context_length": 1048576,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro-0813",
           "tier": "low",
           "omniscience_index": 4.0,
-          "description": "DeepSeek V4 Pro 0813 is a large-scale mixture-of-experts model from DeepSeek. This is the GA release of DeepSeek V4 Pro."
+          "description": "May 28th update to the [original DeepSeek R1](/deepseek/deepseek-r1) Performance on par with [OpenAI o1](/openai/o1), but open-sourced and with fully open reasoning tokens. It's 671B parameters in size, with 37B active..."
         }
       ]
     },
@@ -222,6 +222,18 @@
       "color": "#F59E0B",
       "models": [
         {
+          "id": "qwen/qwen3.8-2.4t-a95b:batch",
+          "name": "Qwen: Qwen3.8 2.4T A95B (batch)",
+          "input_price": 2.5,
+          "output_price": 6.25,
+          "context_length": 1010000,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/qwen/qwen3.8-2.4t-a95b:batch",
+          "tier": "high",
+          "omniscience_index": 2.2,
+          "description": "Qwen3.8 2.4T A95B is an open-weight sparse mixture-of-experts model from Qwen and the open-weight variant of [Qwen3.8 Max](/qwen/qwen3.8-max), with 95 billion active parameters out of 2.4 trillion total. It is..."
+        },
+        {
           "id": "qwen/qwen3.6-max-preview",
           "name": "Qwen: Qwen3.6 Max Preview",
           "input_price": 1.027,
@@ -229,7 +241,7 @@
           "context_length": 262144,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/qwen/qwen3.6-max-preview",
-          "tier": "high",
+          "tier": "mid",
           "omniscience_index": 2.2,
           "description": "Qwen3.6-Max-Preview is a proprietary frontier model from Alibaba Cloud built on a sparse mixture-of-experts architecture with approximately 1 trillion total parameters. It is optimized for agentic coding, tool use, and..."
         },
@@ -241,21 +253,9 @@
           "context_length": 1048576,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/qwen/qwen3.8-2.4t-a95b",
-          "tier": "mid",
-          "omniscience_index": 2.2,
-          "description": "Qwen3.8 2.4T A95B is an open-weight sparse mixture-of-experts model from Qwen and the open-weight variant of [Qwen3.8 Max](/qwen/qwen3.8-max), with 95 billion active parameters out of 2.4 trillion total. It is..."
-        },
-        {
-          "id": "qwen/qwen3.8-max",
-          "name": "Qwen: Qwen3.8 Max",
-          "input_price": 2.0,
-          "output_price": 6.0,
-          "context_length": 1000000,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/qwen/qwen3.8-max",
           "tier": "low",
           "omniscience_index": 2.2,
-          "description": "Qwen3.8 Max is the flagship model in Alibaba's Qwen3.8 series, the general-availability successor to the Qwen3.8 Max Preview. It is a multimodal reasoning model intended for complex reasoning, visual understanding,..."
+          "description": "Qwen3.8 2.4T A95B is an open-weight sparse mixture-of-experts model from Qwen and the open-weight variant of [Qwen3.8 Max](/qwen/qwen3.8-max), with 95 billion active parameters out of 2.4 trillion total. It is..."
         }
       ]
     },
@@ -437,18 +437,6 @@
       "color": "#14B8A6",
       "models": [
         {
-          "id": "arcee-ai/virtuoso-large",
-          "name": "Arcee AI: Virtuoso Large",
-          "input_price": 0.75,
-          "output_price": 1.2,
-          "context_length": 131072,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/arcee-ai/virtuoso-large",
-          "tier": "high",
-          "omniscience_index": 0.8,
-          "description": "Virtuoso‑Large is Arcee's top‑tier general‑purpose LLM at 72 B parameters, tuned to tackle cross‑domain reasoning, creative writing and enterprise QA. Unlike many 70 B peers, it retains the 128 k..."
-        },
-        {
           "id": "arcee-ai/trinity-large-thinking",
           "name": "Arcee AI: Trinity Large Thinking",
           "input_price": 0.22,
@@ -456,7 +444,7 @@
           "context_length": 262144,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/arcee-ai/trinity-large-thinking",
-          "tier": "mid",
+          "tier": "high",
           "omniscience_index": 0.8,
           "description": "Trinity Large Thinking is a powerful open source reasoning model from the team at Arcee AI. It shows strong performance in PinchBench, agentic workloads, and reasoning tasks. Launch video: https://youtu.be/Gc82AXLa0Rg?si=4RLn6WBz33qT--B7..."
         }
