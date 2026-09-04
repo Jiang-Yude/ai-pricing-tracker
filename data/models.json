@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-04 07:49",
+  "updated_at": "2026-09-05 07:46",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -396,8 +396,8 @@
         {
           "id": "nvidia/nemotron-3-ultra-550b-a55b",
           "name": "NVIDIA: Nemotron 3 Ultra",
-          "input_price": 0.6,
-          "output_price": 2.4,
+          "input_price": 0.625,
+          "output_price": 3.125,
           "context_length": 262144,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3-ultra-550b-a55b",
