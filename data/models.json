@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-08 08:01",
+  "updated_at": "2026-09-09 07:53",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -179,18 +179,6 @@
       "color": "#EF4444",
       "models": [
         {
-          "id": "deepseek/deepseek-v4-pro-0813:batch",
-          "name": "DeepSeek: DeepSeek V4 Pro 0813 (batch)",
-          "input_price": 1.32,
-          "output_price": 3.96,
-          "context_length": 1048576,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro-0813:batch",
-          "tier": "high",
-          "omniscience_index": 4.0,
-          "description": "DeepSeek V4 Pro 0813 is a large-scale mixture-of-experts model from DeepSeek. This is the GA release of DeepSeek V4 Pro."
-        },
-        {
           "id": "deepseek/deepseek-r1",
           "name": "DeepSeek: R1",
           "input_price": 0.7,
@@ -198,7 +186,7 @@
           "context_length": 64000,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-r1",
-          "tier": "mid",
+          "tier": "high",
           "omniscience_index": 4.0,
           "description": "DeepSeek R1 is here: Performance on par with [OpenAI o1](/openai/o1), but open-sourced and with fully open reasoning tokens. It's 671B parameters in size, with 37B active in an inference pass...."
         },
@@ -210,9 +198,21 @@
           "context_length": 163840,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-r1-0528",
-          "tier": "low",
+          "tier": "mid",
           "omniscience_index": 4.0,
           "description": "May 28th update to the [original DeepSeek R1](/deepseek/deepseek-r1) Performance on par with [OpenAI o1](/openai/o1), but open-sourced and with fully open reasoning tokens. It's 671B parameters in size, with 37B active..."
+        },
+        {
+          "id": "deepseek/deepseek-v4-pro-0813:batch",
+          "name": "DeepSeek: DeepSeek V4 Pro 0813 (batch)",
+          "input_price": 0.66,
+          "output_price": 1.98,
+          "context_length": 1048576,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro-0813:batch",
+          "tier": "low",
+          "omniscience_index": 4.0,
+          "description": "DeepSeek V4 Pro 0813 is a large-scale mixture-of-experts model from DeepSeek. This is the GA release of DeepSeek V4 Pro."
         }
       ]
     },
@@ -410,7 +410,7 @@
           "name": "NVIDIA: Nemotron 3 Super",
           "input_price": 0.085,
           "output_price": 0.4,
-          "context_length": 1000000,
+          "context_length": 262144,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3-super-120b-a12b",
           "tier": "mid",
