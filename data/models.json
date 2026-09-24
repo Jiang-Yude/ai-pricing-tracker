@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-23 08:04",
+  "updated_at": "2026-09-24 08:16",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -203,16 +203,16 @@
           "description": "May 28th update to the [original DeepSeek R1](/deepseek/deepseek-r1) Performance on par with [OpenAI o1](/openai/o1), but open-sourced and with fully open reasoning tokens. It's 671B parameters in size, with 37B active..."
         },
         {
-          "id": "deepseek/deepseek-v4-pro-0813",
-          "name": "DeepSeek: DeepSeek V4 Pro 0813",
-          "input_price": 0.66,
-          "output_price": 1.98,
+          "id": "deepseek/deepseek-v4-pro",
+          "name": "DeepSeek: DeepSeek V4 Pro 0423",
+          "input_price": 0.9396,
+          "output_price": 1.8792,
           "context_length": 1048576,
           "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro-0813",
+          "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro",
           "tier": "low",
           "omniscience_index": 4.0,
-          "description": "DeepSeek V4 Pro 0813 is a large-scale mixture-of-experts model from DeepSeek. This is the GA release of DeepSeek V4 Pro."
+          "description": "DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reasoning, coding,..."
         }
       ]
     },
@@ -222,6 +222,18 @@
       "color": "#F59E0B",
       "models": [
         {
+          "id": "qwen/qwen3.8-max-prime",
+          "name": "Qwen: Qwen3.8 Max Prime",
+          "input_price": 4.0,
+          "output_price": 12.0,
+          "context_length": 1000000,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/qwen/qwen3.8-max-prime",
+          "tier": "high",
+          "omniscience_index": 2.2,
+          "description": "Qwen3.8 Max Prime is a higher-throughput variant of Qwen3.8 Max from Alibaba's Qwen team, served as a separate SKU at a higher price point. It accepts text, image, and video..."
+        },
+        {
           "id": "qwen/qwen3.6-max-preview",
           "name": "Qwen: Qwen3.6 Max Preview",
           "input_price": 1.027,
@@ -229,7 +241,7 @@
           "context_length": 262144,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/qwen/qwen3.6-max-preview",
-          "tier": "high",
+          "tier": "mid",
           "omniscience_index": 2.2,
           "description": "Qwen3.6-Max-Preview is a proprietary frontier model from Alibaba Cloud built on a sparse mixture-of-experts architecture with approximately 1 trillion total parameters. It is optimized for agentic coding, tool use, and..."
         },
@@ -241,21 +253,9 @@
           "context_length": 1000000,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/qwen/qwen3.8-max-0902",
-          "tier": "mid",
-          "omniscience_index": 2.2,
-          "description": "Qwen3.8 Max 0902 is an updated snapshot of Qwen3.8 Max from Alibaba's Qwen team. It is a 2.4-trillion-parameter mixture-of-experts model that accepts text, image, and video input and returns text,..."
-        },
-        {
-          "id": "qwen/qwen3.8-2.4t-a95b",
-          "name": "Qwen: Qwen3.8 2.4T A95B",
-          "input_price": 2.0,
-          "output_price": 6.0,
-          "context_length": 1048576,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/qwen/qwen3.8-2.4t-a95b",
           "tier": "low",
           "omniscience_index": 2.2,
-          "description": "Qwen3.8 2.4T A95B is an open-weight sparse mixture-of-experts model from Qwen and the open-weight variant of [Qwen3.8 Max](/qwen/qwen3.8-max), with 95 billion active parameters out of 2.4 trillion total. It is..."
+          "description": "Qwen3.8 Max 0902 is an updated snapshot of Qwen3.8 Max from Alibaba's Qwen team. It is a 2.4-trillion-parameter mixture-of-experts model that accepts text, image, and video input and returns text,..."
         }
       ]
     },
@@ -420,7 +420,7 @@
         {
           "id": "nvidia/nemotron-3.5-lightning",
           "name": "NVIDIA: Nemotron 3.5 Lightning",
-          "input_price": 0.07,
+          "input_price": 0.08,
           "output_price": 0.2,
           "context_length": 262144,
           "is_free": false,
