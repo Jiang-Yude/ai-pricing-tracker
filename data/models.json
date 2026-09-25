@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24 08:16",
+  "updated_at": "2026-09-25 08:19",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -205,8 +205,8 @@
         {
           "id": "deepseek/deepseek-v4-pro",
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
-          "input_price": 0.9396,
-          "output_price": 1.8792,
+          "input_price": 0.8416,
+          "output_price": 1.6833,
           "context_length": 1048576,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro",
