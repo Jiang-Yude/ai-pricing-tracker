@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-25 08:19",
+  "updated_at": "2026-09-26 08:24",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -203,16 +203,16 @@
           "description": "May 28th update to the [original DeepSeek R1](/deepseek/deepseek-r1) Performance on par with [OpenAI o1](/openai/o1), but open-sourced and with fully open reasoning tokens. It's 671B parameters in size, with 37B active..."
         },
         {
-          "id": "deepseek/deepseek-v4-pro",
-          "name": "DeepSeek: DeepSeek V4 Pro 0423",
-          "input_price": 0.8416,
-          "output_price": 1.6833,
-          "context_length": 1048576,
+          "id": "deepseek/deepseek-v3.1-terminus",
+          "name": "DeepSeek: DeepSeek V3.1 Terminus",
+          "input_price": 0.27,
+          "output_price": 1.0,
+          "context_length": 163840,
           "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro",
+          "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v3.1-terminus",
           "tier": "low",
           "omniscience_index": 4.0,
-          "description": "DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reasoning, coding,..."
+          "description": "DeepSeek-V3.1 Terminus is an update to [DeepSeek V3.1](/deepseek/deepseek-chat-v3.1) that maintains the model's original capabilities while addressing issues reported by users, including language consistency and agent capabilities, further optimizing the model's..."
         }
       ]
     },
@@ -422,7 +422,7 @@
           "name": "NVIDIA: Nemotron 3.5 Lightning",
           "input_price": 0.08,
           "output_price": 0.2,
-          "context_length": 262144,
+          "context_length": 1000000,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3.5-lightning",
           "tier": "low",
