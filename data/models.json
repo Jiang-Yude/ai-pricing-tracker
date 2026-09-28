@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-27 08:19",
+  "updated_at": "2026-09-28 08:20",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -181,7 +181,7 @@
         {
           "id": "deepseek/deepseek-v4-pro-0813",
           "name": "DeepSeek: DeepSeek V4 Pro 0813",
-          "input_price": 0.2476,
+          "input_price": 0.2149,
           "output_price": 3.5,
           "context_length": 1048576,
           "is_free": false,
@@ -375,16 +375,16 @@
           "description": "MiniMax-M3 is a multimodal foundation model from MiniMax. It supports text, image, and video inputs with text output, a 1M-token context window, and is suited for long-horizon agentic work, coding,..."
         },
         {
-          "id": "minimax/minimax-m2-her",
-          "name": "MiniMax: MiniMax M2-her",
+          "id": "minimax/minimax-m2.7",
+          "name": "MiniMax: MiniMax M2.7",
           "input_price": 0.3,
           "output_price": 1.2,
-          "context_length": 65536,
+          "context_length": 204800,
           "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/minimax/minimax-m2-her",
+          "openrouter_url": "https://openrouter.ai/models/minimax/minimax-m2.7",
           "tier": "low",
           "omniscience_index": 1.2,
-          "description": "MiniMax M2-her is a dialogue-first large language model built for immersive roleplay, character-driven chat, and expressive multi-turn conversations. Designed to stay consistent in tone and personality, it supports rich message..."
+          "description": "MiniMax-M2.7 is a next-generation large language model designed for autonomous, real-world productivity and continuous improvement. Built to actively participate in its own evolution, M2.7 integrates advanced agentic capabilities through multi-agent..."
         }
       ]
     },
