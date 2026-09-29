@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-28 08:20",
+  "updated_at": "2026-09-29 09:31",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -136,6 +136,18 @@
       "color": "#8B5CF6",
       "models": [
         {
+          "id": "x-ai/grok-4.7",
+          "name": "SpaceXAI: Grok 4.7",
+          "input_price": 2.0,
+          "output_price": 6.0,
+          "context_length": 500000,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/x-ai/grok-4.7",
+          "tier": "high",
+          "omniscience_index": 2.5,
+          "description": "Grok 4.7 is SpaceXAI's flagship model for coding, agentic tasks, and knowledge work, succeeding Grok 4.6. It is particularly strong at long-running software engineering tasks, verifying its own work, and..."
+        },
+        {
           "id": "x-ai/grok-4.6",
           "name": "SpaceXAI: Grok 4.6",
           "input_price": 2.0,
@@ -143,7 +155,7 @@
           "context_length": 500000,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/x-ai/grok-4.6",
-          "tier": "high",
+          "tier": "mid",
           "omniscience_index": 2.5,
           "description": "Grok 4.6 is a model from SpaceXAI with frontier performance on coding, knowledge work, and STEM. It is succeeded by [Grok 4.7](/x-ai/grok-4.7)."
         },
@@ -155,21 +167,9 @@
           "context_length": 500000,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/x-ai/grok-4.5",
-          "tier": "mid",
-          "omniscience_index": 2.5,
-          "description": "Grok 4.5 is a model from SpaceXAI with frontier performance on coding, knowledge work, and STEM."
-        },
-        {
-          "id": "x-ai/grok-4.7",
-          "name": "SpaceXAI: Grok 4.7",
-          "input_price": 1.6,
-          "output_price": 4.8,
-          "context_length": 500000,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/x-ai/grok-4.7",
           "tier": "low",
           "omniscience_index": 2.5,
-          "description": "Grok 4.7 is SpaceXAI's flagship model for coding, agentic tasks, and knowledge work, succeeding Grok 4.6. It is particularly strong at long-running software engineering tasks, verifying its own work, and..."
+          "description": "Grok 4.5 is a model from SpaceXAI with frontier performance on coding, knowledge work, and STEM."
         }
       ]
     },
@@ -181,8 +181,8 @@
         {
           "id": "deepseek/deepseek-v4-pro-0813",
           "name": "DeepSeek: DeepSeek V4 Pro 0813",
-          "input_price": 0.2149,
-          "output_price": 3.5,
+          "input_price": 0.4,
+          "output_price": 4.2,
           "context_length": 1048576,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro-0813",
@@ -375,16 +375,16 @@
           "description": "MiniMax-M3 is a multimodal foundation model from MiniMax. It supports text, image, and video inputs with text output, a 1M-token context window, and is suited for long-horizon agentic work, coding,..."
         },
         {
-          "id": "minimax/minimax-m2.7",
-          "name": "MiniMax: MiniMax M2.7",
+          "id": "minimax/minimax-m2-her",
+          "name": "MiniMax: MiniMax M2-her",
           "input_price": 0.3,
           "output_price": 1.2,
-          "context_length": 204800,
+          "context_length": 65536,
           "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/minimax/minimax-m2.7",
+          "openrouter_url": "https://openrouter.ai/models/minimax/minimax-m2-her",
           "tier": "low",
           "omniscience_index": 1.2,
-          "description": "MiniMax-M2.7 is a next-generation large language model designed for autonomous, real-world productivity and continuous improvement. Built to actively participate in its own evolution, M2.7 integrates advanced agentic capabilities through multi-agent..."
+          "description": "MiniMax M2-her is a dialogue-first large language model built for immersive roleplay, character-driven chat, and expressive multi-turn conversations. Designed to stay consistent in tone and personality, it supports rich message..."
         }
       ]
     },
@@ -418,16 +418,16 @@
           "description": "NVIDIA Nemotron 3 Super is a 120B-parameter open hybrid MoE model, activating just 12B parameters for maximum compute efficiency and accuracy in complex multi-agent applications. Built on a hybrid Mamba-Transformer..."
         },
         {
-          "id": "nvidia/nemotron-3.5-lightning",
-          "name": "NVIDIA: Nemotron 3.5 Lightning",
-          "input_price": 0.08,
+          "id": "nvidia/nemotron-3.5-content-safety",
+          "name": "NVIDIA: Nemotron 3.5 Content Safety",
+          "input_price": 0.2,
           "output_price": 0.2,
-          "context_length": 1000000,
+          "context_length": 131072,
           "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3.5-lightning",
+          "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3.5-content-safety",
           "tier": "low",
           "omniscience_index": 1.5,
-          "description": "NVIDIA Nemotron 3.5 Lightning is an open mixture-of-experts model from NVIDIA, with 3B active parameters out of 30B total. It is suited for high-throughput agentic workloads and specialized tasks that..."
+          "description": "NVIDIA Nemotron 3.5 Content Safety is a compact 4B-parameter multimodal guardrail model from NVIDIA, fine-tuned from Google Gemma-3-4B. It moderates both inputs to and responses from LLMs and VLMs, accepting..."
         }
       ]
     },
