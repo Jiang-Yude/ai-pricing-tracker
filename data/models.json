@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-20 08:55",
+  "updated_at": "2026-10-21 08:23",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -406,6 +406,18 @@
           "description": "NVIDIA Nemotron 3 Ultra is an open frontier-reasoning and orchestration model from NVIDIA, with 55B active parameters out of 550B total (MoE). Built on a hybrid Transformer-Mamba mixture-of-experts architecture, it..."
         },
         {
+          "id": "nvidia/nemotron-3-super-120b-a12b",
+          "name": "NVIDIA: Nemotron 3 Super",
+          "input_price": 0.3,
+          "output_price": 2.4,
+          "context_length": 262144,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3-super-120b-a12b",
+          "tier": "mid",
+          "omniscience_index": 1.5,
+          "description": "NVIDIA Nemotron 3 Super is a 120B-parameter open hybrid MoE model, activating just 12B parameters for maximum compute efficiency and accuracy in complex multi-agent applications. Built on a hybrid Mamba-Transformer..."
+        },
+        {
           "id": "nvidia/nemotron-3.5-super-vl",
           "name": "NVIDIA: Nemotron 3.5 Super VL",
           "input_price": 0.15,
@@ -413,21 +425,9 @@
           "context_length": 1048576,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3.5-super-vl",
-          "tier": "mid",
-          "omniscience_index": 1.5,
-          "description": "NVIDIA Nemotron 3.5 Super VL is an open multimodal mixture-of-experts model from NVIDIA, with 12B active parameters out of 120B total. It takes text, images, documents, GUI screenshots, and video..."
-        },
-        {
-          "id": "nvidia/nemotron-3-super-120b-a12b",
-          "name": "NVIDIA: Nemotron 3 Super",
-          "input_price": 0.08,
-          "output_price": 0.45,
-          "context_length": 262144,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3-super-120b-a12b",
           "tier": "low",
           "omniscience_index": 1.5,
-          "description": "NVIDIA Nemotron 3 Super is a 120B-parameter open hybrid MoE model, activating just 12B parameters for maximum compute efficiency and accuracy in complex multi-agent applications. Built on a hybrid Mamba-Transformer..."
+          "description": "NVIDIA Nemotron 3.5 Super VL is an open multimodal mixture-of-experts model from NVIDIA, with 12B active parameters out of 120B total. It takes text, images, documents, GUI screenshots, and video..."
         }
       ]
     },
