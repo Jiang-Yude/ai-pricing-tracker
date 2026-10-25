@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24 08:20",
+  "updated_at": "2026-10-25 08:02",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -203,16 +203,16 @@
           "description": "DeepSeek V4 Pro 0813 is a large-scale mixture-of-experts model from DeepSeek. This is the GA release of DeepSeek V4 Pro."
         },
         {
-          "id": "deepseek/deepseek-v4-pro",
-          "name": "DeepSeek: DeepSeek V4 Pro 0423",
-          "input_price": 0.6622,
-          "output_price": 1.3245,
-          "context_length": 1048576,
+          "id": "deepseek/deepseek-chat-v3-0324",
+          "name": "DeepSeek: DeepSeek V3 0324",
+          "input_price": 0.29,
+          "output_price": 1.14,
+          "context_length": 163840,
           "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro",
+          "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-chat-v3-0324",
           "tier": "low",
           "omniscience_index": 4.0,
-          "description": "DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reasoning, coding,..."
+          "description": "DeepSeek V3, a 685B-parameter, mixture-of-experts model, is the latest iteration of the flagship chat model family from the DeepSeek team. It succeeds the [DeepSeek V3](/deepseek/deepseek-chat-v3) model and performs really well..."
         }
       ]
     },
