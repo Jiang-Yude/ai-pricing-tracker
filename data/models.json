@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27 09:14",
+  "updated_at": "2026-10-28 09:00",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -179,18 +179,6 @@
       "color": "#EF4444",
       "models": [
         {
-          "id": "deepseek/deepseek-v4-pro-0813",
-          "name": "DeepSeek: DeepSeek V4 Pro 0813",
-          "input_price": 1.32,
-          "output_price": 3.96,
-          "context_length": 1048576,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro-0813",
-          "tier": "high",
-          "omniscience_index": 4.0,
-          "description": "DeepSeek V4 Pro 0813 is a large-scale mixture-of-experts model from DeepSeek. This is the GA release of DeepSeek V4 Pro."
-        },
-        {
           "id": "deepseek/deepseek-r1-0528",
           "name": "DeepSeek: R1 0528",
           "input_price": 0.5,
@@ -198,15 +186,27 @@
           "context_length": 163840,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-r1-0528",
-          "tier": "mid",
+          "tier": "high",
           "omniscience_index": 4.0,
           "description": "May 28th update to the [original DeepSeek R1](/deepseek/deepseek-r1) Performance on par with [OpenAI o1](/openai/o1), but open-sourced and with fully open reasoning tokens. It's 671B parameters in size, with 37B active..."
         },
         {
+          "id": "deepseek/deepseek-v4-pro-0813",
+          "name": "DeepSeek: DeepSeek V4 Pro 0813",
+          "input_price": 0.66,
+          "output_price": 1.98,
+          "context_length": 1048576,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro-0813",
+          "tier": "mid",
+          "omniscience_index": 4.0,
+          "description": "DeepSeek V4 Pro 0813 is a large-scale mixture-of-experts model from DeepSeek. This is the GA release of DeepSeek V4 Pro."
+        },
+        {
           "id": "deepseek/deepseek-v4-pro",
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
-          "input_price": 0.9553,
-          "output_price": 1.9105,
+          "input_price": 0.8754,
+          "output_price": 1.7508,
           "context_length": 1048576,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro",
@@ -406,18 +406,6 @@
           "description": "NVIDIA Nemotron 3 Ultra is an open frontier-reasoning and orchestration model from NVIDIA, with 55B active parameters out of 550B total (MoE). Built on a hybrid Transformer-Mamba mixture-of-experts architecture, it..."
         },
         {
-          "id": "nvidia/nemotron-3-super-120b-a12b",
-          "name": "NVIDIA: Nemotron 3 Super",
-          "input_price": 0.3,
-          "output_price": 2.4,
-          "context_length": 262144,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3-super-120b-a12b",
-          "tier": "mid",
-          "omniscience_index": 1.5,
-          "description": "NVIDIA Nemotron 3 Super is a 120B-parameter open hybrid MoE model, activating just 12B parameters for maximum compute efficiency and accuracy in complex multi-agent applications. Built on a hybrid Mamba-Transformer..."
-        },
-        {
           "id": "nvidia/nemotron-3.5-super-vl",
           "name": "NVIDIA: Nemotron 3.5 Super VL",
           "input_price": 0.15,
@@ -425,9 +413,21 @@
           "context_length": 1048576,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3.5-super-vl",
-          "tier": "low",
+          "tier": "mid",
           "omniscience_index": 1.5,
           "description": "NVIDIA Nemotron 3.5 Super VL is an open multimodal mixture-of-experts model from NVIDIA, with 12B active parameters out of 120B total. It takes text, images, documents, GUI screenshots, and video..."
+        },
+        {
+          "id": "nvidia/nemotron-3-super-120b-a12b",
+          "name": "NVIDIA: Nemotron 3 Super",
+          "input_price": 0.08,
+          "output_price": 0.45,
+          "context_length": 262144,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3-super-120b-a12b",
+          "tier": "low",
+          "omniscience_index": 1.5,
+          "description": "NVIDIA Nemotron 3 Super is a 120B-parameter open hybrid MoE model, activating just 12B parameters for maximum compute efficiency and accuracy in complex multi-agent applications. Built on a hybrid Mamba-Transformer..."
         }
       ]
     },
@@ -475,17 +475,5 @@
       ]
     }
   ],
-  "free_models": [
-    {
-      "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "name": "NVIDIA: Nemotron 3 Super (free)",
-      "input_price": 0.0,
-      "output_price": 0.0,
-      "context_length": 262144,
-      "is_free": true,
-      "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3-super-120b-a12b:free",
-      "omniscience_index": 1.2000000000000002,
-      "description": "NVIDIA Nemotron 3 Super is a 120B-parameter open hybrid MoE model, activating just 12B parameters for maximum compute efficiency and accuracy in complex multi-agent applications. Built on a hybrid Mamba-Transformer..."
-    }
-  ]
+  "free_models": []
 }
