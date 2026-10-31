@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30 09:38",
+  "updated_at": "2026-10-31 09:26",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -179,16 +179,16 @@
       "color": "#EF4444",
       "models": [
         {
-          "id": "deepseek/deepseek-v4-pro-0813",
-          "name": "DeepSeek: DeepSeek V4 Pro 0813",
-          "input_price": 1.32,
-          "output_price": 3.96,
+          "id": "deepseek/deepseek-v4-pro",
+          "name": "DeepSeek: DeepSeek V4 Pro 0423",
+          "input_price": 1.6,
+          "output_price": 3.2,
           "context_length": 1048576,
           "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro-0813",
+          "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro",
           "tier": "high",
           "omniscience_index": 4.0,
-          "description": "DeepSeek V4 Pro 0813 is a large-scale mixture-of-experts model from DeepSeek. This is the GA release of DeepSeek V4 Pro."
+          "description": "DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reasoning, coding,..."
         },
         {
           "id": "deepseek/deepseek-r1-0528",
@@ -203,16 +203,16 @@
           "description": "May 28th update to the [original DeepSeek R1](/deepseek/deepseek-r1) Performance on par with [OpenAI o1](/openai/o1), but open-sourced and with fully open reasoning tokens. It's 671B parameters in size, with 37B active..."
         },
         {
-          "id": "deepseek/deepseek-v4-pro",
-          "name": "DeepSeek: DeepSeek V4 Pro 0423",
-          "input_price": 0.8162,
-          "output_price": 1.6325,
+          "id": "deepseek/deepseek-v4-pro-0813",
+          "name": "DeepSeek: DeepSeek V4 Pro 0813",
+          "input_price": 0.66,
+          "output_price": 1.98,
           "context_length": 1048576,
           "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro",
+          "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro-0813",
           "tier": "low",
           "omniscience_index": 4.0,
-          "description": "DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reasoning, coding,..."
+          "description": "DeepSeek V4 Pro 0813 is a large-scale mixture-of-experts model from DeepSeek. This is the GA release of DeepSeek V4 Pro."
         }
       ]
     },
