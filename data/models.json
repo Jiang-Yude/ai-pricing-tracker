@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05 10:00",
+  "updated_at": "2026-11-06 10:00",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -181,26 +181,14 @@
         {
           "id": "deepseek/deepseek-v4-pro-0813",
           "name": "DeepSeek: DeepSeek V4 Pro 0813",
-          "input_price": 0.115,
-          "output_price": 4.6,
+          "input_price": 0.103,
+          "output_price": 4.11,
           "context_length": 1048576,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro-0813",
           "tier": "high",
           "omniscience_index": 4.0,
           "description": "DeepSeek V4 Pro 0813 is a large-scale mixture-of-experts model from DeepSeek. This is the GA release of DeepSeek V4 Pro."
-        },
-        {
-          "id": "deepseek/deepseek-v4-pro",
-          "name": "DeepSeek: DeepSeek V4 Pro 0423",
-          "input_price": 1.6,
-          "output_price": 3.2,
-          "context_length": 1048576,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro",
-          "tier": "mid",
-          "omniscience_index": 4.0,
-          "description": "DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reasoning, coding,..."
         },
         {
           "id": "deepseek/deepseek-r1-0528",
@@ -210,9 +198,21 @@
           "context_length": 163840,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-r1-0528",
-          "tier": "low",
+          "tier": "mid",
           "omniscience_index": 4.0,
           "description": "May 28th update to the [original DeepSeek R1](/deepseek/deepseek-r1) Performance on par with [OpenAI o1](/openai/o1), but open-sourced and with fully open reasoning tokens. It's 671B parameters in size, with 37B active..."
+        },
+        {
+          "id": "deepseek/deepseek-v4-pro",
+          "name": "DeepSeek: DeepSeek V4 Pro 0423",
+          "input_price": 0.9553,
+          "output_price": 1.9105,
+          "context_length": 1048576,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro",
+          "tier": "low",
+          "omniscience_index": 4.0,
+          "description": "DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reasoning, coding,..."
         }
       ]
     },
@@ -320,6 +320,18 @@
           "description": "Llama 4 Maverick 17B Instruct (128E) is a high-capacity multimodal language model from Meta, built on a mixture-of-experts (MoE) architecture with 128 experts and 17 billion active parameters per forward..."
         },
         {
+          "id": "meta-llama/llama-3.3-70b-instruct",
+          "name": "Meta: Llama 3.3 70B Instruct",
+          "input_price": 0.59,
+          "output_price": 0.79,
+          "context_length": 131072,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/meta-llama/llama-3.3-70b-instruct",
+          "tier": "mid",
+          "omniscience_index": 2.8,
+          "description": "The Meta Llama 3.3 multilingual large language model (LLM) is a pretrained and instruction tuned generative model in 70B (text in/text out). The Llama 3.3 instruction tuned text only model..."
+        },
+        {
           "id": "meta-llama/llama-3.1-70b-instruct",
           "name": "Meta: Llama 3.1 70B Instruct",
           "input_price": 0.72,
@@ -327,21 +339,9 @@
           "context_length": 131072,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/meta-llama/llama-3.1-70b-instruct",
-          "tier": "mid",
-          "omniscience_index": 2.8,
-          "description": "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 70B instruct-tuned version is optimized for high quality dialogue usecases. It has demonstrated strong..."
-        },
-        {
-          "id": "meta-llama/llama-3.3-70b-instruct",
-          "name": "Meta: Llama 3.3 70B Instruct",
-          "input_price": 0.2,
-          "output_price": 0.52,
-          "context_length": 131072,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/meta-llama/llama-3.3-70b-instruct",
           "tier": "low",
           "omniscience_index": 2.8,
-          "description": "The Meta Llama 3.3 multilingual large language model (LLM) is a pretrained and instruction tuned generative model in 70B (text in/text out). The Llama 3.3 instruction tuned text only model..."
+          "description": "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 70B instruct-tuned version is optimized for high quality dialogue usecases. It has demonstrated strong..."
         }
       ]
     },
@@ -375,16 +375,16 @@
           "description": "MiniMax-M3 is a multimodal foundation model from MiniMax. It supports text, image, and video inputs with text output, a 1M-token context window, and is suited for long-horizon agentic work, coding,..."
         },
         {
-          "id": "minimax/minimax-m2.7",
-          "name": "MiniMax: MiniMax M2.7",
-          "input_price": 0.3,
-          "output_price": 1.2,
+          "id": "minimax/minimax-m2.5",
+          "name": "MiniMax: MiniMax M2.5",
+          "input_price": 0.27,
+          "output_price": 0.95,
           "context_length": 204800,
           "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/minimax/minimax-m2.7",
+          "openrouter_url": "https://openrouter.ai/models/minimax/minimax-m2.5",
           "tier": "low",
           "omniscience_index": 1.2,
-          "description": "MiniMax-M2.7 is a next-generation large language model designed for autonomous, real-world productivity and continuous improvement. Built to actively participate in its own evolution, M2.7 integrates advanced agentic capabilities through multi-agent..."
+          "description": "MiniMax-M2.5 is a SOTA large language model designed for real-world productivity. Trained in a diverse range of complex real-world digital working environments, M2.5 builds upon the coding expertise of M2.1..."
         }
       ]
     },
