@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09 09:28",
+  "updated_at": "2026-11-10 11:58",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -205,8 +205,8 @@
         {
           "id": "deepseek/deepseek-v4-pro",
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
-          "input_price": 0.9483,
-          "output_price": 1.8966,
+          "input_price": 0.9553,
+          "output_price": 1.9105,
           "context_length": 1048576,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro",
@@ -320,18 +320,6 @@
           "description": "Llama 4 Maverick 17B Instruct (128E) is a high-capacity multimodal language model from Meta, built on a mixture-of-experts (MoE) architecture with 128 experts and 17 billion active parameters per forward..."
         },
         {
-          "id": "meta-llama/llama-3.3-70b-instruct",
-          "name": "Meta: Llama 3.3 70B Instruct",
-          "input_price": 0.59,
-          "output_price": 0.79,
-          "context_length": 131072,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/meta-llama/llama-3.3-70b-instruct",
-          "tier": "mid",
-          "omniscience_index": 2.8,
-          "description": "The Meta Llama 3.3 multilingual large language model (LLM) is a pretrained and instruction tuned generative model in 70B (text in/text out). The Llama 3.3 instruction tuned text only model..."
-        },
-        {
           "id": "meta-llama/llama-3.1-70b-instruct",
           "name": "Meta: Llama 3.1 70B Instruct",
           "input_price": 0.72,
@@ -339,9 +327,21 @@
           "context_length": 131072,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/meta-llama/llama-3.1-70b-instruct",
-          "tier": "low",
+          "tier": "mid",
           "omniscience_index": 2.8,
           "description": "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 70B instruct-tuned version is optimized for high quality dialogue usecases. It has demonstrated strong..."
+        },
+        {
+          "id": "meta-llama/llama-3.3-70b-instruct",
+          "name": "Meta: Llama 3.3 70B Instruct",
+          "input_price": 0.71,
+          "output_price": 0.71,
+          "context_length": 131072,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/meta-llama/llama-3.3-70b-instruct",
+          "tier": "low",
+          "omniscience_index": 2.8,
+          "description": "The Meta Llama 3.3 multilingual large language model (LLM) is a pretrained and instruction tuned generative model in 70B (text in/text out). The Llama 3.3 instruction tuned text only model..."
         }
       ]
     },
@@ -351,18 +351,6 @@
       "color": "#EC4899",
       "models": [
         {
-          "id": "minimax/minimax-m1",
-          "name": "MiniMax: MiniMax M1",
-          "input_price": 0.55,
-          "output_price": 2.2,
-          "context_length": 1000000,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/minimax/minimax-m1",
-          "tier": "high",
-          "omniscience_index": 1.2,
-          "description": "MiniMax-M1 is a large-scale, open-weight reasoning model designed for extended context and high-efficiency inference. It leverages a hybrid Mixture-of-Experts (MoE) architecture paired with a custom \"lightning attention\" mechanism, allowing it..."
-        },
-        {
           "id": "minimax/minimax-m3",
           "name": "MiniMax: MiniMax M3",
           "input_price": 0.3,
@@ -370,7 +358,7 @@
           "context_length": 1048576,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/minimax/minimax-m3",
-          "tier": "mid",
+          "tier": "high",
           "omniscience_index": 1.2,
           "description": "MiniMax-M3 is a multimodal foundation model from MiniMax. It supports text, image, and video inputs with text output, a 1M-token context window, and is suited for long-horizon agentic work, coding,..."
         },
@@ -379,12 +367,24 @@
           "name": "MiniMax: MiniMax M2.5",
           "input_price": 0.3,
           "output_price": 1.2,
-          "context_length": 204800,
+          "context_length": 200000,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/minimax/minimax-m2.5",
-          "tier": "low",
+          "tier": "mid",
           "omniscience_index": 1.2,
           "description": "MiniMax-M2.5 is a SOTA large language model designed for real-world productivity. Trained in a diverse range of complex real-world digital working environments, M2.5 builds upon the coding expertise of M2.1..."
+        },
+        {
+          "id": "minimax/minimax-m3:batch",
+          "name": "MiniMax: MiniMax M3 (batch)",
+          "input_price": 0.224,
+          "output_price": 0.88,
+          "context_length": 524288,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/minimax/minimax-m3:batch",
+          "tier": "low",
+          "omniscience_index": 1.2,
+          "description": "MiniMax-M3 is a multimodal foundation model from MiniMax. It supports text, image, and video inputs with text output, a 1M-token context window, and is suited for long-horizon agentic work, coding,..."
         }
       ]
     },
@@ -409,7 +409,7 @@
           "id": "nvidia/nemotron-3.5-super-vl",
           "name": "NVIDIA: Nemotron 3.5 Super VL",
           "input_price": 0.15,
-          "output_price": 0.5,
+          "output_price": 0.47,
           "context_length": 1048576,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3.5-super-vl",
@@ -441,7 +441,7 @@
           "name": "StepFun: Step 5 Preview",
           "input_price": 1.0,
           "output_price": 2.7,
-          "context_length": 1048576,
+          "context_length": 1000000,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/stepfun/step-5-preview",
           "tier": "high",
