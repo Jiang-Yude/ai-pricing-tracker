@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13 10:26",
+  "updated_at": "2026-11-14 09:59",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -205,8 +205,8 @@
         {
           "id": "deepseek/deepseek-v4-pro",
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
-          "input_price": 0.9553,
-          "output_price": 1.9105,
+          "input_price": 0.9,
+          "output_price": 1.5,
           "context_length": 1048576,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro",
@@ -366,8 +366,8 @@
           "id": "minimax/minimax-m2.5",
           "name": "MiniMax: MiniMax M2.5",
           "input_price": 0.27,
-          "output_price": 1.08,
-          "context_length": 200000,
+          "output_price": 0.95,
+          "context_length": 198000,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/minimax/minimax-m2.5",
           "tier": "mid",
