@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-14 09:59",
+  "updated_at": "2026-11-15 09:31",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -193,8 +193,8 @@
         {
           "id": "deepseek/deepseek-r1-0528",
           "name": "DeepSeek: R1 0528",
-          "input_price": 0.5,
-          "output_price": 2.15,
+          "input_price": 0.571,
+          "output_price": 2.286,
           "context_length": 163840,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-r1-0528",
