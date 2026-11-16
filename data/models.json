@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15 09:31",
+  "updated_at": "2026-11-16 09:35",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -193,8 +193,8 @@
         {
           "id": "deepseek/deepseek-r1-0528",
           "name": "DeepSeek: R1 0528",
-          "input_price": 0.571,
-          "output_price": 2.286,
+          "input_price": 0.5,
+          "output_price": 2.15,
           "context_length": 163840,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-r1-0528",
@@ -409,7 +409,7 @@
           "id": "nvidia/nemotron-3.5-super-vl",
           "name": "NVIDIA: Nemotron 3.5 Super VL",
           "input_price": 0.15,
-          "output_price": 0.47,
+          "output_price": 0.5,
           "context_length": 1048576,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3.5-super-vl",
@@ -459,18 +459,6 @@
           "tier": "mid",
           "omniscience_index": 0.6,
           "description": "Step 3.7 Flash is StepFun's latest high-efficiency multimodal Mixture-of-Experts model. It pairs a 196B-parameter language backbone with a vision encoder for native image and video understanding, activating roughly 11B parameters..."
-        },
-        {
-          "id": "stepfun/step-3.5-flash",
-          "name": "StepFun: Step 3.5 Flash",
-          "input_price": 0.1,
-          "output_price": 0.3,
-          "context_length": 262144,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/stepfun/step-3.5-flash",
-          "tier": "low",
-          "omniscience_index": 0.6,
-          "description": "Step 3.5 Flash is StepFun's most capable open-source foundation model. Built on a sparse Mixture of Experts (MoE) architecture, it selectively activates only 11B of its 196B parameters per token...."
         }
       ]
     }
