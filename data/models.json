@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-18 11:21",
+  "updated_at": "2026-11-19 10:57",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -93,6 +93,18 @@
       "color": "#3B82F6",
       "models": [
         {
+          "id": "google/gemini-4-neon",
+          "name": "Google: Gemini 4 Neon",
+          "input_price": 3.0,
+          "output_price": 15.0,
+          "context_length": 1048576,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/google/gemini-4-neon",
+          "tier": "high",
+          "omniscience_index": 3.2,
+          "description": "Gemini 4 Neon is a fast, mid-priced model in the Gemini 4 family from Google, built for coding and agentic work. It is suited for repository and terminal coding, web..."
+        },
+        {
           "id": "google/gemini-3-pro-image",
           "name": "Google: Nano Banana Pro (Gemini 3 Pro Image)",
           "input_price": 2.0,
@@ -100,7 +112,7 @@
           "context_length": 131072,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/google/gemini-3-pro-image",
-          "tier": "high",
+          "tier": "mid",
           "omniscience_index": 3.2,
           "description": "Nano Banana Pro is Google’s most advanced image-generation and editing model, built on Gemini 3 Pro. It extends the original Nano Banana with significantly improved multimodal reasoning, real-world grounding, and..."
         },
@@ -112,21 +124,9 @@
           "context_length": 1048576,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/google/gemini-3.1-pro-preview-customtools",
-          "tier": "mid",
-          "omniscience_index": 3.2,
-          "description": "Gemini 3.1 Pro Preview Custom Tools is a variant of Gemini 3.1 Pro that improves tool selection behavior by preventing overuse of a general bash tool when more efficient third-party..."
-        },
-        {
-          "id": "google/gemini-3.1-pro-preview",
-          "name": "Google: Gemini 3.1 Pro Preview",
-          "input_price": 2.0,
-          "output_price": 12.0,
-          "context_length": 1048576,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/google/gemini-3.1-pro-preview",
           "tier": "low",
           "omniscience_index": 3.2,
-          "description": "Gemini 3.1 Pro Preview is Google’s frontier reasoning model, delivering enhanced software engineering performance, improved agentic reliability, and more efficient token usage across complex workflows. Building on the multimodal foundation..."
+          "description": "Gemini 3.1 Pro Preview Custom Tools is a variant of Gemini 3.1 Pro that improves tool selection behavior by preventing overuse of a general bash tool when more efficient third-party..."
         }
       ]
     },
@@ -193,8 +193,8 @@
         {
           "id": "deepseek/deepseek-r1-0528",
           "name": "DeepSeek: R1 0528",
-          "input_price": 0.5,
-          "output_price": 2.15,
+          "input_price": 0.571,
+          "output_price": 2.286,
           "context_length": 163840,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-r1-0528",
