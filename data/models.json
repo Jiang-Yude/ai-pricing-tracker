@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-19 10:57",
+  "updated_at": "2026-11-20 10:51",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -137,7 +137,7 @@
       "models": [
         {
           "id": "x-ai/grok-4.7",
-          "name": "SpaceXAI: Grok 4.7",
+          "name": "SpaceXSI: Grok 4.7",
           "input_price": 2.0,
           "output_price": 6.0,
           "context_length": 500000,
@@ -145,11 +145,11 @@
           "openrouter_url": "https://openrouter.ai/models/x-ai/grok-4.7",
           "tier": "high",
           "omniscience_index": 2.5,
-          "description": "Grok 4.7 is SpaceXAI's flagship model for coding, agentic tasks, and knowledge work, succeeding Grok 4.6. It is particularly strong at long-running software engineering tasks, verifying its own work, and..."
+          "description": "Grok 4.7 is SpaceXSI's flagship model for coding, agentic tasks, and knowledge work, succeeding Grok 4.6. It is particularly strong at long-running software engineering tasks, verifying its own work, and..."
         },
         {
           "id": "x-ai/grok-4.6",
-          "name": "SpaceXAI: Grok 4.6",
+          "name": "SpaceXSI: Grok 4.6",
           "input_price": 2.0,
           "output_price": 6.0,
           "context_length": 500000,
@@ -157,11 +157,11 @@
           "openrouter_url": "https://openrouter.ai/models/x-ai/grok-4.6",
           "tier": "mid",
           "omniscience_index": 2.5,
-          "description": "Grok 4.6 is a model from SpaceXAI with frontier performance on coding, knowledge work, and STEM. It is succeeded by [Grok 4.7](/x-ai/grok-4.7)."
+          "description": "Grok 4.6 is a model from SpaceXSI with frontier performance on coding, knowledge work, and STEM. It is succeeded by [Grok 4.7](/x-ai/grok-4.7)."
         },
         {
           "id": "x-ai/grok-4.5",
-          "name": "SpaceXAI: Grok 4.5",
+          "name": "SpaceXSI: Grok 4.5",
           "input_price": 2.0,
           "output_price": 6.0,
           "context_length": 500000,
@@ -169,7 +169,7 @@
           "openrouter_url": "https://openrouter.ai/models/x-ai/grok-4.5",
           "tier": "low",
           "omniscience_index": 2.5,
-          "description": "Grok 4.5 is a model from SpaceXAI with frontier performance on coding, knowledge work, and STEM."
+          "description": "Grok 4.5 is a model from SpaceXSI with frontier performance on coding, knowledge work, and STEM."
         }
       ]
     },
@@ -181,8 +181,8 @@
         {
           "id": "deepseek/deepseek-v4-pro-0813",
           "name": "DeepSeek: DeepSeek V4 Pro 0813",
-          "input_price": 0.111,
-          "output_price": 4.44,
+          "input_price": 0.285,
+          "output_price": 4.3,
           "context_length": 1048576,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro-0813",
@@ -277,6 +277,18 @@
           "description": "Mistral Medium 3.5 is a dense 128B instruction-following model from Mistral AI. It supports text and image inputs with text output, and is designed for agentic workflows, coding, and complex..."
         },
         {
+          "id": "mistralai/pixtral-large-2502",
+          "name": "Mistral: Pixtral Large 2502",
+          "input_price": 2.0,
+          "output_price": 6.0,
+          "context_length": 128000,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/mistralai/pixtral-large-2502",
+          "tier": "mid",
+          "omniscience_index": 1.8,
+          "description": "Pixtral Large 2502 is the February 2025 version of Mistral AI's large multimodal model, following [Pixtral Large 2411](https://openrouter.ai/mistralai/pixtral-large-2411). It accepts text and image input, including documents, charts, and natural images,..."
+        },
+        {
           "id": "mistralai/mistral-large-2407",
           "name": "Mistral Large 2407",
           "input_price": 2.0,
@@ -284,21 +296,9 @@
           "context_length": 131072,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/mistralai/mistral-large-2407",
-          "tier": "mid",
-          "omniscience_index": 1.8,
-          "description": "This is Mistral AI's flagship model, Mistral Large 2 (version mistral-large-2407). It's a proprietary weights-available model and excels at reasoning, code, JSON, chat, and more. Read the launch announcement [here](https://mistral.ai/news/mistral-large-2407/)...."
-        },
-        {
-          "id": "mistralai/mixtral-8x22b-instruct",
-          "name": "Mistral: Mixtral 8x22B Instruct",
-          "input_price": 2.0,
-          "output_price": 6.0,
-          "context_length": 65536,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/mistralai/mixtral-8x22b-instruct",
           "tier": "low",
           "omniscience_index": 1.8,
-          "description": "Mistral's official instruct fine-tuned version of [Mixtral 8x22B](/models/mistralai/mixtral-8x22b). It uses 39B active parameters out of 141B, offering unparalleled cost efficiency for its size. Its strengths include: - strong math, coding,..."
+          "description": "This is Mistral AI's flagship model, Mistral Large 2 (version mistral-large-2407). It's a proprietary weights-available model and excels at reasoning, code, JSON, chat, and more. Read the launch announcement [here](https://mistral.ai/news/mistral-large-2407/)...."
         }
       ]
     },
