@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26 11:58",
+  "updated_at": "2026-11-27 11:57",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -181,8 +181,8 @@
         {
           "id": "deepseek/deepseek-v4-pro-0813",
           "name": "DeepSeek: DeepSeek V4 Pro 0813",
-          "input_price": 0.111,
-          "output_price": 4.44,
+          "input_price": 0.0999,
+          "output_price": 5.0,
           "context_length": 1048576,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro-0813",
@@ -320,6 +320,18 @@
           "description": "Llama 4 Maverick 17B Instruct (128E) is a high-capacity multimodal language model from Meta, built on a mixture-of-experts (MoE) architecture with 128 experts and 17 billion active parameters per forward..."
         },
         {
+          "id": "meta-llama/llama-3.3-70b-instruct",
+          "name": "Meta: Llama 3.3 70B Instruct",
+          "input_price": 0.59,
+          "output_price": 0.79,
+          "context_length": 131072,
+          "is_free": false,
+          "openrouter_url": "https://openrouter.ai/models/meta-llama/llama-3.3-70b-instruct",
+          "tier": "mid",
+          "omniscience_index": 2.8,
+          "description": "The Meta Llama 3.3 multilingual large language model (LLM) is a pretrained and instruction tuned generative model in 70B (text in/text out). The Llama 3.3 instruction tuned text only model..."
+        },
+        {
           "id": "meta-llama/llama-3.1-70b-instruct",
           "name": "Meta: Llama 3.1 70B Instruct",
           "input_price": 0.72,
@@ -327,21 +339,9 @@
           "context_length": 131072,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/meta-llama/llama-3.1-70b-instruct",
-          "tier": "mid",
-          "omniscience_index": 2.8,
-          "description": "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 70B instruct-tuned version is optimized for high quality dialogue usecases. It has demonstrated strong..."
-        },
-        {
-          "id": "meta-llama/llama-3.3-70b-instruct",
-          "name": "Meta: Llama 3.3 70B Instruct",
-          "input_price": 0.71,
-          "output_price": 0.71,
-          "context_length": 131072,
-          "is_free": false,
-          "openrouter_url": "https://openrouter.ai/models/meta-llama/llama-3.3-70b-instruct",
           "tier": "low",
           "omniscience_index": 2.8,
-          "description": "The Meta Llama 3.3 multilingual large language model (LLM) is a pretrained and instruction tuned generative model in 70B (text in/text out). The Llama 3.3 instruction tuned text only model..."
+          "description": "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 70B instruct-tuned version is optimized for high quality dialogue usecases. It has demonstrated strong..."
         }
       ]
     },
