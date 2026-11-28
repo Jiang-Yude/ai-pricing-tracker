@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27 11:57",
+  "updated_at": "2026-11-28 11:45",
   "vendors": [
     {
       "vendor": "Anthropic",
@@ -205,8 +205,8 @@
         {
           "id": "deepseek/deepseek-v4-pro",
           "name": "DeepSeek: DeepSeek V4 Pro 0423",
-          "input_price": 0.8882,
-          "output_price": 1.5082,
+          "input_price": 0.4007,
+          "output_price": 1.5509,
           "context_length": 1048576,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro",
@@ -250,7 +250,7 @@
           "name": "Qwen: Qwen3.8 2.4T A95B",
           "input_price": 2.0,
           "output_price": 6.0,
-          "context_length": 1048576,
+          "context_length": 1000000,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/qwen/qwen3.8-2.4t-a95b",
           "tier": "low",
@@ -409,7 +409,7 @@
           "id": "nvidia/nemotron-3.5-super-vl",
           "name": "NVIDIA: Nemotron 3.5 Super VL",
           "input_price": 0.15,
-          "output_price": 0.47,
+          "output_price": 0.45,
           "context_length": 1048576,
           "is_free": false,
           "openrouter_url": "https://openrouter.ai/models/nvidia/nemotron-3.5-super-vl",
